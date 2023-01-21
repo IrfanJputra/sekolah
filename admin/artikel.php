@@ -40,16 +40,41 @@
       </div><!-- /.container-fluid -->
     </section>
 
+ <!-- /.Modal tambah data-->
+ <div class="modal fade" id="modal-lg">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h4 class="modal-title">Tambah Artikel</h4>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+            <form action="" method="post" enctype="multipart/form-data">
+                  
 
+
+              <div class="modal-footer justify-content-between">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                <button type="submit" name="submit" class="btn btn-primary">Tambah</button>
+              </div>
+            </form>
+            </div>
+          <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+      </div>
+      </div>
+      <!-- /.end modal -->
+ 
   
     <!-- Main content -->
     <section class="content">
-
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Artikel</h3>
-
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-lg">Tambah</button>
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
               <i class="fas fa-minus"></i>
@@ -66,15 +91,14 @@
                     <th> No</th>
                     <th>Judul</th>
                     <th>Deskripsi</th>
-                 
-                    <th>Aksi</th>
+                    <th>Tag</th>
                   </tr>
               </thead>
               <tbody>
               <?php 
         include '../koneksi.php';
         $no =1;
-        $data = mysqli_query($conn, "SELECT * FROM tb_artikel");
+        $data = mysqli_query($conn, "SELECT * FROM tb_artikel, tb_tagline WHERE tb_artikel.id_tag = tb_tagline.id_tag");
         while($baris= mysqli_fetch_assoc($data)){
             ?>
             <tr>
@@ -82,6 +106,7 @@
                 <td><?php echo $no++; ?></td>
                 <td><?php echo $baris['judul']; ?></td>
                 <td><?php echo $baris['artikel']; ?></td>
+                <td><?php echo $baris['tagline']; ?></td>
     
        
                     <td>

@@ -140,7 +140,7 @@ function tambah_artikel($data){
 	global $conn;
 	$judul              	= htmlspecialchars($data["judul"]);
 	$artikel       			 = htmlspecialchars($data["artikel"]);
-	$tagline              = htmlspecialchars($data["id_tag"]);
+	$tagline              = htmlspecialchars($data["tagline"]);
 
 	
 	$query = "INSERT INTO tb_artikel

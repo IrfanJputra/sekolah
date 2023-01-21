@@ -13,9 +13,6 @@
 <?php
 include '../koneksi.php';
 include '../function.php';
-$query = mysqli_query($conn, "SELECT * FROM tb_tagline");
-$data = mysqli_fetch_array($query);
- var_dump($data);
 ?>
 
 <?php
@@ -33,12 +30,7 @@ if( isset($_POST["submit"]) ) {
 			</script>
 		";
 	} else {
-		echo "
-			<script>
-				alert('data gagal ditambahkan!');
-				document.location.href = 'aksi.php';
-			</script>
-		";
+var_dump($_POST);
 	}
 
 
@@ -64,10 +56,20 @@ if( isset($_POST["submit"]) ) {
                             </div>
 
                             <div class="mb-3" >
-                            <label><strong>Tag :</strong></label>
-                                <select name="id_tag"  class="form-control">
-                                <option value="<?= $data['id_tag'] ?>"><?= $data['tagline']; ?></option>
-                                </select>
+                            <label for="mutasi">Tag</label>
+                            <select  name="tagline" class="form-control" value="tagline" >
+                            <option disabled selected> Pilih </option>
+                            <?php 
+                            include '../koneksi.php';
+                            $data = mysqli_query($conn, "SELECT * FROM tb_tagline WHERE id_tag;");
+                            while($baris= mysqli_fetch_array($data)){
+                            ?>
+                                <option value="<?php echo $baris['id_tag']; ?>"><?php echo $baris['tagline']; ?></option> 
+
+                            <?php
+                            }
+                                ?>
+                            </select>
                             </div>
                             <div class="d-flex justify-content-center">
                                 <input type="submit" name="submit" value="Submit" class="btn btn-success">
