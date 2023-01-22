@@ -17,16 +17,21 @@ include '../function.php';
 
 <?php
 
+$id = $_GET["id_artikel"];
 
+//query data siswa berdasarkan id
+$sqlGet = "SELECT * FROM tb_artikel, tb_tagline WHERE tb_artikel.id_tag=tb_tagline.id_tag and id_artikel = '$id'";
+$queryGet = mysqli_query($conn, $sqlGet);
+$baris = mysqli_fetch_array($queryGet);
 // cek apakah tombol submit sudah ditekan atau belum
 if( isset($_POST["submit"]) ) {
 	
 	// cek apakah data berhasil di tambahkan atau tidak
-	if( tambah_artikel($_POST) > 0 ) {
+	if( ubah_artikel($_POST) > 0 ) {
 		echo "
 			<script>
 				alert('data berhasil ditambahkan!');
-				document.location.href = 'aksi.php';
+				document.location.href = 'artikel.php';
 			</script>
 		";
 	} else {
@@ -48,23 +53,23 @@ var_dump($_POST);
                         <form method='post' action=''>
                             <div class="mb-3">
                                 <label><strong>Judul</strong></label>
-                                <input type="text" name="judul" class="form-control">
+                                <input type="text" name="judul" class="form-control" value="<?= $baris['judul'];?>" >
                             </div>
                             <div class="mb-1">
                                 <label><strong>Artikel</strong></label>
-                                <textarea id="mytextarea" name='artikel' class="form-control"></textarea><br>
+                                <textarea id="mytextarea"  name='artikel' class="form-control"><?= $baris['artikel']; ?></textarea><br>
                             </div>
 
                             <div class="mb-3" >
                             <label for="mutasi">Tag</label>
-                            <select  name="tagline" class="form-control" value="tagline" >
+                            <select  name="id_tag" class="form-control" value="id_tag" >
                             <option disabled selected> Pilih </option>
                             <?php 
                             include '../koneksi.php';
-                            $data = mysqli_query($conn, "SELECT * FROM tb_tagline WHERE id_tag;");
-                            while($baris= mysqli_fetch_array($data)){
+                            $query = mysqli_query($conn, "SELECT * FROM tb_tagline");
+                            while($baris= mysqli_fetch_array($query)){
                             ?>
-                                <option value="<?php echo $baris['id_tag']; ?>"><?php echo $baris['tagline']; ?></option> 
+                                <option value="<?php echo $baris['id_tag']; ?>"<?= ($baris['id_tag'] == 1) ? 'selected' : '' ?> ><?php echo $baris['tagline']; ?></option> 
 
                             <?php
                             }

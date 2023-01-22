@@ -11,6 +11,8 @@
   <link rel="stylesheet" href="../plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../assets/css/adminlte.min.css">
+  <script src="https://cdn.tiny.cloud/1/mm6l99xsdy8839w49co27k6rib54auzv3dsdlaehcanu59xq/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -40,6 +42,36 @@
       </div><!-- /.container-fluid -->
     </section>
 
+
+  <!-- aksi   -->
+  <?php
+
+  include '../function.php';
+  // cek apakah tombol submit sudah ditekan atau belum
+if( isset($_POST["submit"]) ) {
+	
+	// cek apakah data berhasil di tambahkan atau tidak
+	if( tambah_artikel($_POST) > 0 ) {
+		echo "
+			<script>
+				alert('data berhasil ditambahkan!');
+				document.location.href = 'artikel.php';
+			</script>
+		";
+	} else {
+    echo "
+    <script>
+      alert('data gagal ditambahkan!');
+      document.location.href = 'artikel.php';
+    </script>
+  ";
+	}
+
+
+}
+?>
+  <!-- end aksi -->
+
  <!-- /.Modal tambah data-->
  <div class="modal fade" id="modal-lg">
         <div class="modal-dialog modal-lg">
@@ -51,11 +83,34 @@
               </button>
             </div>
             <div class="modal-body">
-            <form action="" method="post" enctype="multipart/form-data">
-                  
+            <form action="" method="post">
+            <div class="mb-3">
+                                <label><strong>Judul</strong></label>
+                                <input type="text" name="judul" class="form-control">
+                            </div>
+                            <div class="mb-1">
+                                <label><strong>Artikel</strong></label>
+                                <textarea id="mytextarea" name='artikel' class="form-control"></textarea><br>
+                            </div>
 
+                            <div class="mb-3" >
+                            <label for="mutasi">Tag</label>
+                            <select  name="tagline" class="form-control" value="tagline" >
+                            <option disabled selected> Pilih </option>
+                            <?php 
+                            include '../koneksi.php';
+                            $data = mysqli_query($conn, "SELECT * FROM tb_tagline WHERE id_tag;");
+                            while($baris= mysqli_fetch_array($data)){
+                            ?>
+                                <option value="<?php echo $baris['id_tag']; ?>"><?php echo $baris['tagline']; ?></option> 
 
-              <div class="modal-footer justify-content-between">
+                            <?php
+                            }
+                                ?>
+                            </select>
+                            </div>
+
+                <div class="modal-footer justify-content-between">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 <button type="submit" name="submit" class="btn btn-primary">Tambah</button>
               </div>
@@ -110,12 +165,11 @@
     
        
                     <td>
-                <a href="" class="btn btn-primary" data-toggle="modal" data-target="#modalEdit<?= $no ?>">Edit</a>                    
+                <a href="aksi.php?id_artikel=<?php echo $baris['id_artikel'];?>" class="btn btn-primary">Edit</a>                    
                 <a href="" class="btn btn-danger" data-toggle="modal" data-target="#modal-default<?= $no ?>">Hapus</a>                    
   
-              </td>
-
-                </tr>
+        </td>
+        </tr>
         <?php
         }
         ?>
@@ -152,5 +206,21 @@
 <script src="../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 <!-- AdminLTE App -->
 <script src="../assets/js/adminlte.min.js"></script>
+
+    <!-- Script -->
+    <script>
+        tinymce.init({
+            forced_root_block : false,
+            selector: '#mytextarea',
+            plugins: [
+                'a11ychecker','advlist','advcode','advtable','autolink','checklist','export',
+                'lists','link','image','charmap','preview','anchor','searchreplace','visualblocks',
+                'powerpaste','fullscreen','formatpainter','insertdatetime','media','table','help','wordcount'
+            ],
+            toolbar: 'undo redo | formatpainter casechange styleselect | bold italic backcolor | ' +
+            'alignleft aligncenter alignright alignjustify | ' +
+            'bullist numlist checklist outdent indent | removeformat | a11ycheck code table help'
+        });
+    </script>
 </body>
 </html>

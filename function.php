@@ -210,6 +210,29 @@ function tambah_artikel($data){
 		return mysqli_affected_rows($conn);	
 	}
 
+		//ubah artikel
+		function ubah_artikel($data) {
+			global $conn;
+			$id 					= $_GET['id_artikel'];
+			$id_tag       			 = htmlspecialchars($data["id_tag"]);
+			$judul              	= htmlspecialchars($data["judul"]);
+			$artikel       			 = htmlspecialchars($data["artikel"]);
+
+	
+
+				
+			$query = "UPDATE tb_artikel SET
+						
+						id_tag	= '$id_tag',
+						judul = '$judul',
+						artikel = '$artikel'
+						WHERE id_artikel=$id
+					";
+		
+			mysqli_query($conn, $query);
+		
+			return mysqli_affected_rows($conn);	
+		}
 
 //hapus guru
 	function hapus($data) {
