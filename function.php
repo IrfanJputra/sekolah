@@ -242,7 +242,7 @@ function tambah_artikel($data){
 		return mysqli_affected_rows($conn);
 	}
 	
-	//hapus guru
+	//hapus siswa
 	function hapus_siswa($data) {
 		global $conn;
 		$id = ($data["id_siswa"]);
@@ -250,4 +250,12 @@ function tambah_artikel($data){
 		return mysqli_affected_rows($conn);
 	}
 
+		//hapus artikel
+		function hapus_artikel($data) {
+			global $conn;
+			$id = ($data["id_artikel"]);
+			mysqli_query($conn, "DELETE FROM tb_artikel WHERE id_artikel = $id");
+			return mysqli_affected_rows($conn);
+		}
+	
 ?>

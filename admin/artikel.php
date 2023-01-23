@@ -165,8 +165,8 @@ if( isset($_POST["submit"]) ) {
     
        
                     <td>
-                <a href="aksi.php?id_artikel=<?php echo $baris['id_artikel'];?>" class="btn btn-primary">Edit</a>                    
-                <a href="" class="btn btn-danger" data-toggle="modal" data-target="#modal-default<?= $no ?>">Hapus</a>                    
+                <a href="edit-artikel.php?id_artikel=<?php echo $baris['id_artikel'];?>" class="btn btn-primary">Edit</a>                    
+                <a href="del-artikel.php?id_artikel=<?= $baris['id_artikel'];?>" class="btn btn-danger" onclick="return confirm('Yakin?');">Hapus</a>                    
   
         </td>
         </tr>
