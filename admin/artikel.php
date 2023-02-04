@@ -12,7 +12,9 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="../assets/css/adminlte.min.css">
   <script src="https://cdn.tiny.cloud/1/mm6l99xsdy8839w49co27k6rib54auzv3dsdlaehcanu59xq/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-
+  <style>
+    .tox-notification {display: none !important;}
+</style>
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
@@ -83,9 +85,9 @@ if( isset($_POST["submit"]) ) {
               </button>
             </div>
             <div class="modal-body">
-            <form action="" method="post">
+            <form action="" method="post" enctype="multipart/form-data">
             <div class="mb-3">
-                                <label><strong>Judul</strong></label>
+                              <label><strong>Judul</strong></label>
                                 <input type="text" name="judul" class="form-control">
                             </div>
                             <div class="mb-1">
@@ -108,6 +110,16 @@ if( isset($_POST["submit"]) ) {
                             }
                                 ?>
                             </select>
+                            </div>
+                            <div class="form-group">
+                            <label for="foto">Foto</label>
+                            <div class="input-group">
+                            <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="gambar" name="gambar">
+                            <label class="custom-file-label" for="gambar">Pilih Gambar</label>
+                            
+                            </div>
+                            </div>
                             </div>
 
                 <div class="modal-footer justify-content-between">
@@ -147,6 +159,7 @@ if( isset($_POST["submit"]) ) {
                     <th>Judul</th>
                     <th>Deskripsi</th>
                     <th>Tag</th>
+                    <th>Gambar</th>
                   </tr>
               </thead>
               <tbody>
@@ -162,6 +175,7 @@ if( isset($_POST["submit"]) ) {
                 <td><?php echo $baris['judul']; ?></td>
                 <td><?php echo $baris['artikel']; ?></td>
                 <td><?php echo $baris['tagline']; ?></td>
+                <td><a href="upload/<?php echo $baris['gambar']; ?>" target="_blank"><img src="../upload/<?php echo $baris['gambar']; ?>" width="50"> </a></td>
     
        
                     <td>

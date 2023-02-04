@@ -82,7 +82,8 @@ if( isset($_POST["submit"]) ) {
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
-                        <form method='post' action=''>
+                        <form method='post' action='' enctype="multipart/form-data">
+                        <input type="hidden" name="gambarLama" value="<?php echo $baris['gambar']; ?>">
                             <div class="mb-3">
                                 <label><strong>Judul</strong></label>
                                 <input type="text" name="judul" class="form-control" value="<?= $baris['judul'];?>" >
@@ -107,6 +108,17 @@ if( isset($_POST["submit"]) ) {
                             }
                                 ?>
                             </select>
+                            </div>
+                            <div class="form-group">
+                            <label for="foto">Foto</label>
+                            <div class="input-group">
+                            <div class="custom-file">
+                            <input type="file" class="custom-file-input" id="gambar" name="gambar">
+                            <label class="custom-file-label" for="gambar">Pilih Gambar</label>
+                            
+                            </div>
+                            </div>
+                            <p style="color: red;">  *Abaikan Jika Tidak ada perubahan gambar</p>
                             </div>
                             <div class="d-flex justify-content-center">
                                 <input type="submit" name="submit" value="Submit" class="btn btn-success">

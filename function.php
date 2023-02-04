@@ -141,10 +141,15 @@ function tambah_artikel($data){
 	$judul              	= htmlspecialchars($data["judul"]);
 	$artikel       			 = htmlspecialchars($data["artikel"]);
 	$tagline              = htmlspecialchars($data["tagline"]);
+	// upload gambar
+	$gambar = upload();
+	if( !$gambar ) {
+	return false;
+	}
 
 	
 	$query = "INSERT INTO tb_artikel
-					VALUES (NULL,'$tagline', '$judul', '$artikel')";
+					VALUES (NULL,'$tagline', '$judul', '$artikel','$gambar')";
    
    
    mysqli_query($conn, $query);
@@ -217,15 +222,21 @@ function tambah_artikel($data){
 			$id_tag       			 = htmlspecialchars($data["id_tag"]);
 			$judul              	= htmlspecialchars($data["judul"]);
 			$artikel       			 = htmlspecialchars($data["artikel"]);
-
+			$gambarLama = htmlspecialchars($data["gambarLama"]);
 	
+			// cek apakah user pilih gambar baru atau tidak
+			if( $_FILES['gambar']['error'] === 4 ) {
+				$gambar = $gambarLama;
+			} else {
+				$gambar = upload();
+			}
 
-				
 			$query = "UPDATE tb_artikel SET
 						
 						id_tag	= '$id_tag',
 						judul = '$judul',
-						artikel = '$artikel'
+						artikel = '$artikel',
+						gambar = '$gambar'
 						WHERE id_artikel=$id
 					";
 		
