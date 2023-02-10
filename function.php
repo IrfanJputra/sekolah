@@ -87,6 +87,52 @@ function upload() {
 	return $namaFileBaru;
 }
 
+//upload
+function logo() {
+
+	$namaFile = $_FILES['logo']['name'];
+	$ukuranFile = $_FILES['logo']['size'];
+	$error = $_FILES['logo']['error'];
+	$tmpName = $_FILES['logo']['tmp_name'];
+
+	// cek apakah tidak ada gambar yang diupload
+	if( $error === 4 ) {
+		echo "<script>
+				alert('pilih gambar terlebih dahulu!');
+			  </script>";
+		return false;
+	}
+
+	// cek apakah yang diupload adalah gambar
+	$ekstensiFileValid = ['jpg', 'png', 'jpeg'];
+	$ekstensiFile = explode('.', $namaFile);
+	$ekstensiFile = strtolower(end($ekstensiFile));
+	if( !in_array($ekstensiFile, $ekstensiFileValid) ) {
+		echo "<script>
+				alert('yang anda upload bukan gambar!');
+			  </script>";
+		return false;
+	}
+
+	// cek jika ukurannya terlalu besar
+	if( $ukuranFile > 10000000 ) {
+		echo "<script>
+				alert('ukuran gambar terlalu besar!');
+			  </script>";
+		return false;
+	}
+
+	// lolos pengecekan, gambar siap diupload
+	// generate nama gambar baru
+	$namaFileBaru = uniqid();
+	$namaFileBaru .= '.';
+	$namaFileBaru .= $ekstensiFile;
+
+	move_uploaded_file($tmpName, '../upload/' . $namaFileBaru);
+
+	return $namaFileBaru;
+}
+
  
 // tambah guru
 
@@ -141,6 +187,9 @@ function tambah_artikel($data){
 	$judul              	= htmlspecialchars($data["judul"]);
 	$artikel       			 = htmlspecialchars($data["artikel"]);
 	$tagline              = htmlspecialchars($data["tagline"]);
+	$tanggal    			= date("Y-m-d H:i:s");
+
+
 	// upload gambar
 	$gambar = upload();
 	if( !$gambar ) {
@@ -149,7 +198,7 @@ function tambah_artikel($data){
 
 	
 	$query = "INSERT INTO tb_artikel
-					VALUES (NULL,'$tagline', '$judul', '$artikel','$gambar')";
+					VALUES (NULL,'$tagline', '$judul', '$artikel','$gambar','$tanggal')";
    
    
    mysqli_query($conn, $query);
@@ -245,6 +294,31 @@ function tambah_artikel($data){
 			return mysqli_affected_rows($conn);	
 		}
 
+		//ubah setting
+		function ubah_setting($data) {
+			global $conn;
+			$logo              				= htmlspecialchars($data["logo"]);
+			$sambutan       			 	= htmlspecialchars($data["sambutan"]);
+			$gambarLama 					= htmlspecialchars($data["gambarLama"]);
+	
+			// cek apakah user pilih gambar baru atau tidak
+			if( $_FILES['logo']['error'] === 4 ) {
+				$logo = $gambarLama;
+			} else {
+				$logo = logo();
+			}
+
+			$query = "UPDATE tb_setting SET			
+					
+						logo = '$logo',
+						sambutan = '$sambutan'
+					";
+		
+			mysqli_query($conn, $query);
+		
+			return mysqli_affected_rows($conn);	
+		}		
+
 //hapus guru
 	function hapus($data) {
 		global $conn;
@@ -262,9 +336,8 @@ function tambah_artikel($data){
 	}
 
 		//hapus artikel
-		function hapus_artikel($data) {
+		function hapus_artikel($id) {
 			global $conn;
-			$id = ($data["id_artikel"]);
 			mysqli_query($conn, "DELETE FROM tb_artikel WHERE id_artikel = $id");
 			return mysqli_affected_rows($conn);
 		}

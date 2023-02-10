@@ -1,4 +1,12 @@
 <?php
+session_start();
+$_SESSION ['halaman']='dashboard.php';
+if( !isset($_SESSION["level"]) ) {
+	header("Location: login.php");
+	exit;
+}
+?>
+<?php
 include '../koneksi.php';
 require '../function.php';
 ?>

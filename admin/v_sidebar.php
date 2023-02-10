@@ -30,7 +30,11 @@
           </div>
         </div>
       </div>
-
+      <?php include '../koneksi.php';
+      $query= mysqli_query($conn, 'SELECT * FROM tb_setting');
+      $baris = mysqli_fetch_array($query);
+      
+      ?>
       <!-- Sidebar Menu -->
       <nav class="mt-2">
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
@@ -81,7 +85,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="setting.php" class="nav-link">
+            <a href="setting.php?id_setting=<?=$baris['id_setting'];?>" class="nav-link">
               <i class="nav-icon fas fa-wrench"></i>
               <p>
                 Setting 

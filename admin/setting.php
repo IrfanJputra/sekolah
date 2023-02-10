@@ -19,7 +19,7 @@
 <?php
 include 'v_navbar.php';
 include 'v_sidebar.php';
-
+include '../function.php';
 ?>
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -39,7 +39,32 @@ include 'v_sidebar.php';
         </div>
       </div><!-- /.container-fluid -->
     </section>
+    <?php
 
+$id = $_GET["id_setting"];
+
+//query data siswa berdasarkan id
+$sqlGet = "SELECT * FROM tb_setting WHERE id_setting = '$id'";
+$queryGet = mysqli_query($conn, $sqlGet);
+$baris = mysqli_fetch_array($queryGet);
+// cek apakah tombol submit sudah ditekan atau belum
+if( isset($_POST["submit"]) ) {
+	
+	// cek apakah data berhasil di tambahkan atau tidak
+	if( ubah_setting($_POST) > 0 ) {
+		echo '
+			<script>
+				alert("Berhasil Disimpan!");
+				document.location.href = "setting.php?id_setting=1";
+			</script>
+		';
+	} else {
+	var_dump($_POST);
+	}
+
+
+}
+?>
     <!-- Main content -->
     <section class="content">
       <div class="row">
@@ -55,37 +80,28 @@ include 'v_sidebar.php';
               </div>
             </div>
             <div class="card-body">
-              <div class="form-group">
-                <label for="inputName">Project Name</label>
-                <input type="text" id="inputName" class="form-control">
+              <form action="" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="gambarLama" value="<?php echo $baris['logo']; ?>">
+                <div class="form-group">
+                  <label for="inputName">Logo</label>
+                  <input type="file" class="form-control" name="logo" id="logo">
+                  <p style="color: red;">Ukuran Logo 100 x 75 (<?=$baris['logo'];?>)</p>
+                </div>
+                <div class="form-group">
+                  <label >Sambutan</label>
+                  <textarea  name="sambutan" class="form-control" rows="4"><?=$baris['sambutan'];?></textarea>
+                </div>
+
+                <div class="form-group">
+                  <label for="inputProjectLeader">Project Leader</label>
+                  <input type="text" id="inputProjectLeader" class="form-control">
+                </div>
               </div>
-              <div class="form-group">
-                <label for="inputDescription">Project Description</label>
-                <textarea id="inputDescription" class="form-control" rows="4"></textarea>
-              </div>
-              <div class="form-group">
-                <label for="inputStatus">Status</label>
-                <select id="inputStatus" class="form-control custom-select">
-                  <option selected disabled>Select one</option>
-                  <option>On Hold</option>
-                  <option>Canceled</option>
-                  <option>Success</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label for="inputClientCompany">Client Company</label>
-                <input type="text" id="inputClientCompany" class="form-control">
-              </div>
-              <div class="form-group">
-                <label for="inputProjectLeader">Project Leader</label>
-                <input type="text" id="inputProjectLeader" class="form-control">
-              </div>
+              <!-- /.card-body -->
             </div>
-            <!-- /.card-body -->
+            <!-- /.card -->
           </div>
-          <!-- /.card -->
-        </div>
-        <div class="col-md-6">
+          <div class="col-md-6">
           <div class="card card-secondary">
             <div class="card-header">
               <h3 class="card-title">Budget</h3>
@@ -116,11 +132,12 @@ include 'v_sidebar.php';
         </div>
       </div>
       <div class="row">
-        <div class="col-12">
-          <a href="#" class="btn btn-secondary">Cancel</a>
-          <input type="submit" value="Create new Project" class="btn btn-success float-right">
+        <div class="col-12" style="text-align: center;">
+          
+          <input type="submit" name="submit" value="Submit" class="btn btn-success">
         </div>
       </div>
+    </form>
     </section>
     <!-- /.content -->
   </div>

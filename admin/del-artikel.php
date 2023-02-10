@@ -1,7 +1,7 @@
 <?php 
 require '../function.php';
 
-$id = $_GET["id_artikel"];
+$id = $_GET['id_artikel'];
 
 if( hapus_artikel($id) > 0 ) {
 	echo "
@@ -13,7 +13,7 @@ if( hapus_artikel($id) > 0 ) {
 } else {
 	echo "
 		<script>
-			alert('data gagal ditambahkan!');
+			alert('data gagal dihapus!');
 			document.location.href = 'artikel.php';
 		</script>
 	";
