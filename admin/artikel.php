@@ -16,7 +16,6 @@ require '../function.php';
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>AdminLTE 3 | DataTables</title>
-
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
   <!-- Font Awesome -->
@@ -27,6 +26,10 @@ require '../function.php';
   <link rel="stylesheet" href="../plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="../assets/css/adminlte.min.css">
+  <script src="https://cdn.tiny.cloud/1/mm6l99xsdy8839w49co27k6rib54auzv3dsdlaehcanu59xq/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
+  <style>
+    .tox-notification {display: none !important;}
+</style>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">
@@ -62,26 +65,27 @@ include 'v_sidebar.php';
               <div class="card-header">
                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-lg">Tambah</button>
       
-<?php
+  <!-- aksi   -->
+  <?php
 
-// cek apakah tombol submit sudah ditekan atau belum
+  // cek apakah tombol submit sudah ditekan atau belum
 if( isset($_POST["submit"]) ) {
 	
 	// cek apakah data berhasil di tambahkan atau tidak
-	if( tambah_siswa($_POST) > 0 ) {
+	if( tambah_artikel($_POST) > 0 ) {
 		echo "
 			<script>
 				alert('data berhasil ditambahkan!');
-				document.location.href = 'siswa.php';
+				document.location.href = 'artikel.php';
 			</script>
 		";
 	} else {
-		echo "
-			<script>
-				alert('data gagal ditambahkan!');
-				document.location.href = 'siswa.php';
-			</script>
-		";
+    echo "
+    <script>
+      alert('data gagal ditambahkan!');
+      document.location.href = 'artikel.php';
+    </script>
+  ";
 	}
 
 

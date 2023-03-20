@@ -1,648 +1,550 @@
+
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="light">
-
-<head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Web Sekolah - Home</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
-
-  <!-- Favicons -->
-  <link href="user/assets/img/favicon.png" rel="icon">
-  <link href="user/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Jost:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="user/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="user/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="user/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="user/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="user/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="user/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="user/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="user/assets/css/style.css" rel="stylesheet">
-
-  <!-- =======================================================
-  * Template Name: Arsha - v4.10.0
-  * Template URL: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
-</head>
-
-<body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
-    <div class="container d-flex align-items-center">
-
-      <!-- <h1 class="logo me-auto"><a href="index.php"></a></h1> -->
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <a href="index.php" class="logo me-auto"><img src="user/assets/img/apple-touch-icon.png" alt="" class="img-fluid"></a>
-
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Artikel</a></li>
-          <li><a class="nav-link   scrollto" href="#portfolio">Gallery</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#">Login</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Better Solutions For Your Business</h1>
-          <h2>We are team of talented designers making websites with Bootstrap</h2>
-          <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
-            <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
-          </div>
-        </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
-          <img src="user/assets//img/hero-img.png" class="img-fluid animated" alt="">
-        </div>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SMA Negeri 2 Kebumen</title>
+    <link rel="canonical" href="#" />
+    <meta name="keywords" content="smanda,sman 2 kebumen,sma negeri 2 kebumen,smitc,smitc cms,sma,pelajar,kebumen,jawa tengah,indonesia">
+    <meta name="description" content="SMA Negeri 2 Kebumen adalah sekolah yang terletak di Kota Kebumen, Provinsi Jawa Tengah. Website ini adalah website resmi SMA NEGERI 2 KEBUMEN">
+    <meta http-equiv="expires" content="Fri, 18 Jul 2022 1:00:00 GMT">
+    <meta http-equiv="page-enter" content="revealtrans(duration=seconds,transition=num)">
+    <meta http-equiv="page-exit" content="revealtrans(duration=seconds,transition=num)">
+    <!-- [if IE]>
+								<script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); 
+								</script>
+								<![endif] -->
+    <meta content='SMA Negeri 2 Kebumen' property='og:site_name'>
+    <meta content='SMA Negeri 2 Kebumen' property='og:title'>
+    <meta content='website' property='og:type'>
+    <link href='index.html' rel='openid.delegate'>
+    <link href='index.html' rel='canonical'>
+    <meta content='#' property='og:url'>
+    <meta content='SMITC_CMS' name='generator'>
+    <meta property='og:image'>
+    <link href='user/assets/icon/favicon.ico' rel='icon' type='image/x-icon'>
+    <link href="user/assets/icon/favicon.ico" rel="shortcut icon">
+    <link href='user/assets/icon/favicon-32x32.png' rel='icon' sizes='32x32'>
+    <link href='user/assets/icon/android-icon-192x192.png' rel='icon' sizes='192x192'>
+    <link href='user/assets/icon/apple-icon-180x180.png' rel='apple-touch-icon-precomposed'>
+    <meta content='user/assets/icon/ms-icon-144x144.png' name='msapplication-TileImage'>
+    <meta content='#49952E' name='msapplication-navbutton-color'>
+    <meta content='#49952E' name='apple-mobile-web-app-status-bar-style'>
+    <meta content='#49952E' name='theme-color'>
+    <meta content='#' name='google-site-verification'>
+    <meta content='Indonesia' name='gßeo.placename'>
+    <meta content='SMITC CMS ' name='Author'>
+    <meta content='general' name='rating'>
+    <meta content='id' name='geo.country'>
+    <meta content='1525075227538724' property='fb:app_id'>
+    <meta content='100006157928140' property='fb:admins'>
+    <meta content='summary' name='twitter:card'>
+    <meta content='SMAN 2 Kebumen' name='twitter:title'>
+    <meta content='@officialosis2' name='twitter:site'>
+    <meta content='@officialosis2' name='twitter:creator'>
+    <meta content='summary_large_image' name='twitter:card'>
+    <meta content="id_ID" property="og:locale">
+    <meta content="en_US" property="og:locale:alternate">
+    <meta content="en_GB" property="og:locale:alternate">
+    <link href='#' rel='dns-prefetch'>
+    <link href='#' rel='dns-prefetch'>
+    <link href='#' rel='dns-prefetch'>
+    <meta name="keywords" content="smanda,sman 2 kebumen,sma negeri 2 kebumen,smitc,smitc cms,sma,pelajar,kebumen,jawa tengah,indonesia" />
+    <meta name="description" content="SMA Negeri 2 Kebumen adalah sekolah yang terletak di Kota Kebumen, Provinsi Jawa Tengah. Website ini adalah website resmi SMA NEGERI 2 KEBUMEN" />
+    <link rel="stylesheet" type="text/css" href="user/assets/css/pages/landing.min.css" />
+    <link rel="stylesheet" type="text/css" href="user/assets/css/swiper.min.css" />
+    <link rel="stylesheet" type="text/css" href="user/assets/css/font-awesome.min.css">
+    <script type="text/javascript">
+      var BASE_URL = 'index2';
+    </script>
+    <script type="text/javascript" src="user/assets/js/jquery-3.4.1.min.js"></script>
+  </head>
+  <body id="body">
+    <section class="hero">
+      <div class="navtop">
+        <nav class="wrapper">
+          <ul>
+            <li>
+              <a href="https://goo.gl/maps/ztKKwwCQYfDkGT5HA" target="_blank" rel="noreferrer noopener" class="waves-effect">
+                <i class="fa fa-map-marker"></i>Jln Cincin Kota No. 8, Karangsari, Kebumen 54351 </a>
+            </li>
+            <li>
+              <a href="tel:0287-381820" class="waves-effect">
+                <i class="fa fa-phone"></i>0287-381820 </a>
+            </li>
+            <li>
+              <a href="mailto:smanda.kbm@gmail.com" class="waves-effect">
+                <i class="fa fa-envelope"></i>smanda.kbm@gmail.com </a>
+            </li>
+          </ul>
+        </nav>
       </div>
-    </div>
-
-  </section><!-- End Hero -->
-
-  <main id="main">
-
-    <!-- ======= Clients Section ======= -->
-    <section id="clients" class="clients section-bg">
-      <div class="container">
-
-        <div class="row" data-aos="zoom-in">
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="user/assets//img/clients/client-1.png" class="img-fluid" alt="">
+      <nav class="mainav" id="sticky_nav">
+        <nav class="wrapper">
+          <div class="logo waves-effect" id="mainavlogo">
+            <img src="user/assets/img/logo/smanda.png" alt="SMA Negeri 2 Kebumen">
+            <span>SMA Negeri 2 Kebumen</span>
           </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="user/assets//img/clients/client-2.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="user/assets//img/clients/client-3.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="user/assets//img/clients/client-4.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="user/assets//img/clients/client-5.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
-            <img src="user/assets//img/clients/client-6.png" class="img-fluid" alt="">
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Cliens Section -->
-
-    <!-- ======= About Us Section ======= -->
-    <section id="about" class="about">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Sambutan Kepala Sekolah</h2>
-        </div>
-
-        <div class="row content">
-          <div class="col-lg-6">
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
+          <div class="menu">
+            <div class="menu-toggle" id="mobile-menu">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
             <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li>
+                <a class="waves-effect " href="index.html#!">
+                  <i class="fa fa-home mr-2"></i>Beranda </a>
+              </li>
+              <li>
+                <a class="waves-effect " href="lihat/Visi-dan-Misi-SMA-Negeri-2-Kebumen-29112019.html">
+                  <i class="fa fa-star mr-2"></i>Visi dan Misi </a>
+              </li>
+              <li>
+                <a class="waves-effect " href="author.html">
+                  <i class="fa fa-user mr-2"></i>Profil </a>
+              </li>
+              <li>
+                <a class="waves-effect " href="postingan.html">
+                  <i class="fa fa-files-o mr-2"></i>Postingan </a>
+              </li>
+              <li>
+                <a href="#search_popup" class="waves-effect btn btn-anim btn-color search">
+                  <i class="fa fa-search"></i>
+                </a>
+              </li>
+              <li id="login">
+                <a href="login.html" class="waves-effect btn btn-anim btn-color">Login</a>
+              </li>
             </ul>
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0">
-            <p>
-              Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <a href="#" class="btn-learn-more">Learn More</a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End About Us Section -->
-
-    <!-- ======= Why Us Section ======= -->
-    <section id="why-us" class="why-us section-bg">
-      <div class="container-fluid" data-aos="fade-up">
-      <div class="section-title">
-          <h2>Agenda</h2>
-        </div>
-        <div class="row">
-
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-stretch  order-2 order-lg-1">
-
-            <div class="content">
-              <h3>Eum ipsam laborum deleniti <strong>velit pariatur architecto aut nihil</strong></h3>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-              </p>
-            </div>
-
-            <div class="accordion-list">
-              <ul>
-                <li>
-                  <a data-bs-toggle="collapse" class="collapse" data-bs-target="#accordion-list-1"><span>01</span> Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-1" class="collapse show" data-bs-parent=".accordion-list">
-                    <p>
-                      Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-2" class="collapsed"><span>02</span> Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-2" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
-                    </p>
-                  </div>
-                </li>
-
-                <li>
-                  <a data-bs-toggle="collapse" data-bs-target="#accordion-list-3" class="collapsed"><span>03</span> Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
-                  <div id="accordion-list-3" class="collapse" data-bs-parent=".accordion-list">
-                    <p>
-                      Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
-                    </p>
-                  </div>
-                </li>
-
-              </ul>
-            </div>
-
-          </div>
-
-          <div class="col-lg-5 align-items-stretch order-1 order-lg-2 img" style='background-image: url("user/assets//img/why-us.png");' data-aos="zoom-in" data-aos-delay="150">&nbsp;</div>
-        </div>
-
-      </div>
-    </section><!-- End Why Us Section -->
-
-    <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills">
-      <div class="container" data-aos="fade-up">
-      <div class="section-title">
-          <h2>Jumlah Siswa</h2>
-        </div>
-        <div class="row">
-          <div class="col-lg-6 d-flex align-items-center" data-aos="fade-right" data-aos-delay="100">
-            <img src="user/assets//img/skills.png" class="img-fluid" alt="">
-          </div>
-
-          <div class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left" data-aos-delay="100">
-            <h3>Voluptatem dignissimos provident quasi corporis voluptates</h3>
-            <p class="fst-italic">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p>
-
-            <div class="skills-content">
-
-              <div class="progress">
-                <span class="skill">HTML <i class="val">100%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">CSS <i class="val">90%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">JavaScript <i class="val">75%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-              <div class="progress">
-                <span class="skill">Photoshop <i class="val">55%</i></span>
-                <div class="progress-bar-wrap">
-                  <div class="progress-bar" role="progressbar" aria-valuenow="55" aria-valuemin="0" aria-valuemax="100"></div>
-                </div>
-              </div>
-
-            </div>
-
-          </div>
-        </div>
-
+        </nav>
+      </nav>
+      <div class="parallax pagi">
+        <div class="layer sky" data-parallax-speed="0.4" data-max-scroll="1000"></div>
+        <div class="layer layer_0" data-parallax-speed="0.1" data-max-scroll="1000"></div>
+        <div class="layer layer_1" data-parallax-speed="0.4" data-max-scroll="1000"></div>
+        <div class="layer layer_2" data-parallax-speed="0.5" data-max-scroll="1000"></div>
+        <div class="layer layer_3" data-parallax-speed="0.775" data-max-scroll="1000"></div>
+        <div class="layer layer_4" data-parallax-speed="0.85" data-max-scroll="1000"></div>
+        <div class="layer layer_5" data-parallax-speed="0.95" data-max-scroll="1000"></div>
       </div>
     </section>
-    <!-- End Skills Section
-
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-      <div class="container" data-aos="fade-up">
-      <div class="row">
-        <div class="section-title">
-          <h2>Artikel Terbaru</h2>
-        </div>
-        <?php
-        require 'koneksi.php';
-        
-        $data = mysqli_query($conn, "SELECT * FROM tb_artikel, tb_tagline WHERE tb_artikel.id_tag = tb_tagline.id_tag ORDER BY id_artikel DESC LIMIT 4");
-
-        while ($baris=mysqli_fetch_assoc($data)){
-        $limited_text = substr($baris['artikel'], 0, 50) . "...";
-        ?>
-
-          <div class="col-xl-3 col-md-6 d-flex align-items-stretch mt-4 mt-md-0 aos-init aos-animate" data-aos="zoom-in" data-aos-delay="100">
-            <div class="icon-box">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4><a href=""><?=$baris['judul'];?></a></h4>
-              <p><?=$limited_text;?></p>
-            </div>
-          </div>
-
-        <?php
-        }
-    ?>
-
-</div>
-      </div>
-    </section><!-- End Services Section -->
-
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-      <div class="container" data-aos="zoom-in">
-
-        <div class="row">
-          <div class="col-lg-9 text-center text-lg-start">
-            <h3>Call To Action</h3>
-            <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          </div>
-          <div class="col-lg-3 cta-btn-container text-center">
-            <a class="cta-btn align-middle" href="#">Call To Action</a>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Cta Section -->
-
-    <!-- ======= Portfolio Section ======= -->
-    <section id="portfolio" class="portfolio">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Gallery</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <ul id="portfolio-flters" class="d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
-          <li data-filter="*" class="filter-active">All</li>
-          <li data-filter=".filter-app">App</li>
-          <li data-filter=".filter-card">Card</li>
-          <li data-filter=".filter-web">Web</li>
-        </ul>
-
-        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="user/assets//img/portfolio/portfolio-1.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 1</h4>
-              <p>App</p>
-              <a href="user/assets//img/portfolio/portfolio-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="user/assets//img/portfolio/portfolio-2.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="user/assets//img/portfolio/portfolio-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="user/assets//img/portfolio/portfolio-3.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 2</h4>
-              <p>App</p>
-              <a href="user/assets//img/portfolio/portfolio-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="user/assets//img/portfolio/portfolio-4.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 2</h4>
-              <p>Card</p>
-              <a href="user/assets//img/portfolio/portfolio-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="user/assets//img/portfolio/portfolio-5.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 2</h4>
-              <p>Web</p>
-              <a href="user/assets//img/portfolio/portfolio-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 2"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
-            <div class="portfolio-img"><img src="user/assets//img/portfolio/portfolio-6.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>App 3</h4>
-              <p>App</p>
-              <a href="user/assets//img/portfolio/portfolio-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="App 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="user/assets//img/portfolio/portfolio-7.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 1</h4>
-              <p>Card</p>
-              <a href="user/assets//img/portfolio/portfolio-7.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 1"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
-            <div class="portfolio-img"><img src="user/assets//img/portfolio/portfolio-8.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Card 3</h4>
-              <p>Card</p>
-              <a href="user/assets//img/portfolio/portfolio-8.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Card 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
-            <div class="portfolio-img"><img src="user/assets//img/portfolio/portfolio-9.jpg" class="img-fluid" alt=""></div>
-            <div class="portfolio-info">
-              <h4>Web 3</h4>
-              <p>Web</p>
-              <a href="user/assets//img/portfolio/portfolio-9.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Web 3"><i class="bx bx-plus"></i></a>
-              <a href="portfolio-details.html" class="details-link" title="More Details"><i class="bx bx-link"></i></a>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Portfolio Section -->
-
-    <!-- ======= Team Section ======= -->
-    <section id="team" class="team section-bg">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Guru</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-          <?php require 'koneksi.php';
-        $data = mysqli_query($conn,"SELECT * FROM tb_guru LIMIT 4");
-        while($baris= mysqli_fetch_array($data)){
-            ?>
-            <div class="col-lg-6 mt-4">
-            <div class="member d-flex align-items-start" data-aos="zoom-in" data-aos-delay="200">
-              <div class="pic"><img src="upload/<?php echo $baris['gambar']; ?>" class="img-fluid" alt=""></div>
-              <div class="member-info">
-                <h4><?= $baris['nama'];?></h4>
-                <span><?= $baris['nip'];?></span>
-                <p><?= $baris['jabatan'];?></p>
-                <div class="social">
-                  <a href=""><i class="ri-twitter-fill"></i></a>
-                  <a href=""><i class="ri-facebook-fill"></i></a>
-                  <a href=""><i class="ri-instagram-fill"></i></a>
-                  <a href=""> <i class="ri-linkedin-box-fill"></i> </a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-          <?php
-        }
-        ?>
-
-
-        </div>
-
-      </div>
-    </section><!-- End Team Section -->
-
-
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Contact</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>A108 Adam Street, New York, NY 535022</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>info@example.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>+1 5589 55488 55s</p>
-              </div>
-
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
-            </div>
-
-          </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Contact Section -->
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer">
-
-    <div class="footer-newsletter">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-6">
-            <h4>Join Our Newsletter</h4>
-            <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-            <form action="" method="post">
-              <input type="email" name="email"><input type="submit" value="Subscribe">
-            </form>
-          </div>
+    <section class="utama">
+      <div class="wrapper">
+        <!-- slide -->
+      <!-- <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
+  <div class="swiper-wrapper" style="transition-duration: 5ms; transform: translate3d(-1600px, 0px, 0px);">
+    <div class="swiper-slide" data-swiper-slide-index="0" style="width: 800px;">
+      <div class="postingan">
+        <div class="image waves-effect">
+          <img src="user/assets/img/postingan/0cec42f4bb222fab521215e4c0792a61.jpg" alt="Postingan 1" title="Tim Lari Estafet SMANDA Berhasil Lolos Kejurnas SAC 2023 image" class="swiper-lazy swiper-lazy-loaded">
+          <a href="#" title="Tim Lari Estafet SMANDA Berhasil Lolos Kejurnas SAC 2023"></a>
         </div>
       </div>
     </div>
-
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-
-          <div class="col-lg-3 col-md-6 footer-contact">
-            <h3>Arsha</h3>
-            <p>
-              A108 Adam Street <br>
-              New York, NY 535022<br>
-              United States <br><br>
-              <strong>Phone:</strong> +1 5589 55488 55<br>
-              <strong>Email:</strong> info@example.com<br>
-            </p>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Useful Links</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Services</h4>
-            <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-3 col-md-6 footer-links">
-            <h4>Our Social Networks</h4>
-            <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-            <div class="social-links mt-3">
-              <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-              <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-              <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-              <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-          </div>
-
+    <div class="swiper-slide" data-swiper-slide-index="1" style="width: 800px;">
+      <div class="postingan">
+        <div class="image waves-effect">
+          <img src="user/assets/img/postingan/72b59fafb52906b549a1bc3ac735ed3d.jpg" alt="Postingan 2" title="Futsal Putri SMANDA Rebut 2 Juara Sekaligus Dalam Ajang Olahraga SMANDA 2022 image" class="swiper-lazy swiper-lazy-loaded">
+          <a href="#" title="Futsal Putri SMANDA Rebut 2 Juara Sekaligus Dalam Ajang Olahraga SMANDA 2022"></a>
         </div>
       </div>
     </div>
-
-    <div class="container footer-bottom clearfix">
+    <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2" style="width: 800px;">
+      <div class="postingan">
+        <div class="image waves-effect">
+          <img src="user/assets/img/postingan/c2aea85381c491d8567e4527fa736520.jpg" alt="Postingan 3" title="Siswi Inklusi SMANDA Raih Juara 2 Lomba Digital Art image" class="swiper-lazy swiper-lazy-loaded">
+          <a href="#" title="Siswi Inklusi SMANDA Raih Juara 2 Lomba Digital Art"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide">
+    <i style="display:inline-block" class="fa fa-chevron-left"></i>
+  </div>
+  <div class="swiper-button-next" tabindex="0" role="button" aria-label="Next slide">
+    <i style="display:inline-block" class="fa fa-chevron-right"></i>
+  </div>
+  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+  <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+</div> -->
+        <div class="utamapost ">
+          <a href="#" class="image waves-effect" title="Terhenti 2 Tahun, Gaspala Smanda Kembali Telusuri Gua Petruk">
+            <img class="malas" src="user/assets/load_post.gif" data-src="user/assets/img/postingan/320ab55dad9be9fd77c695e96bcc291c.jpg" alt="Terhenti 2 Tahun, Gaspala Smanda Kembali Telusuri Gua Petruk" title="Gambar Terhenti 2 Tahun, Gaspala Smanda Kembali Telusuri Gua Petruk" />
+          </a>
+          <div class="utamacontent">
+            <h2>Terhenti 2 Tahun, Gaspala Smanda Kembali Telusuri Gua Petruk</h2>
+            <span class="desc"> Setelah terhenti selama dua tahun karena pandemi, kegiatan telusur gua atau biasa disebut caving kembali dilaksanakan oleh Gabungan Siswa Pecinta Alam (Gaspala) SMA N 2 Kebumen. Kegiatan caving berlangsung pada Sabtu, 10 September 2022 dengan mengunjungi Gua Petruk, gua yang cukup familiar bagi para pelaku kegiatan alam khususnya di Kabupaten Kebumen. Ketua umum Gaspala, Mijile Pinten, mengatakan bahwa kegiatan ini yang pertama dalam program kerja kepengurusannya. Menurutnya, salah satu divisi yang ada di Gaspala yaitu divisi caving menjadi alasan&#8230; </span>
+            <a class="btn btn-anim btn-ln" href="lihat/gaspala-smanda-kembali-telusuri-gua-petruk-setelah-terhenti-selama-dua-tahun-20221118.html">Read more <i class="fa fa-chevron-right reverse"></i>
+            </a>
+          </div>
+        </div>
+        <div class="utamapost">
+          <a href="#" class="image waves-effect" title="VOSDA SMANDA Raih Juara 3 TN CUP XII Magelang">
+            <img class="malas" src="user/assets/load_post.gif" data-src="user/assets/img/postingan/45c6d2b262bcc8840f2bd4d4b5760968.jpg" alt="VOSDA SMANDA Raih Juara 3 TN CUP XII Magelang" title="Gambar VOSDA SMANDA Raih Juara 3 TN CUP XII Magelang" />
+          </a>
+          <div class="utamacontent">
+            <h2>VOSDA SMANDA Raih Juara 3 TN CUP XII Magelang</h2>
+            <span class="desc"> Talenta &ndash; Tim bola voli putra dan putri SMANDA Kebumen (VOSDA) berhasil membawa pulang juara tiga di TN CUP XII cabang olahraga bola voli yang diselenggarakan di SMA TARUNA NUSANTARA pada tanggal 26-29 Oktober 2022. Kepala sekolah SMAN 2 Kebumen menyampaikan bahwa beliau sangat bangga terhadap prestasi yang telah diraih tim bola voli SMANDA. &ldquo;Saya sebagai kepala sekolah sangat bangga sekali dan senang karena tim voli kita berhasil meraih juara tiga TN Cup di Magelang.&rdquo; Ujar Basir,S.Pd.,M.Pd. Selain&#8230; </span>
+            <a class="btn btn-anim btn-ln" href="lihat/vosda-smanda-raih-juara-3-tn-cup-xii-magelang-20221116.html">Read more <i class="fa fa-chevron-right reverse"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="fouricon">
+      <div class="wrapper">
+        <div class="wrapicon">
+          <a href="guru.php" class="subicon btn-anim waves-effect">
+            <span class="icon">
+              <i class="fa fa-user"></i>
+            </span>
+            <span class="title">20</span>
+            <span class="title">Guru</span>
+          </a>
+          <a href="siswa.php" class="subicon btn-anim waves-effect">
+            <span class="icon">
+              <i class="fa fa-soccer-ball-o"></i>
+            </span>
+            <span class="title">300</span>
+            <span class="title">Siswa</span>
+          </a>
+          <a href="#" class="subicon btn-anim waves-effect">
+            <span class="icon">
+              <i class="fa fa-newspaper-o"></i>
+            </span>
+            <span class="title">PIP</span>
+          </a>
+          <a href="agenda.html" class="subicon btn-anim waves-effect">
+            <span class="icon">
+              <i class="fa fa-pencil-square-o"></i>
+            </span>
+            <span class="title">Agenda</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="berita">
+      <div class="wrapper">
+        <div class="headingsection">
+          <h1>News Update</h1>
+        </div>
+        <div class="bagidua">
+          <div class="image">
+            <img src="https://www.smandakebumen.sch.id/assets/img/landing/berita.png" alt="Berita">
+          </div>
+          <div class="content beritapost">
+            <div class="wrapberita">
+              <span class="number">1</span>
+              <a href="https://www.smandakebumen.sch.id/lihat/tingkatkan-skill-anggotanya-gaspala-smanda-gelar-latihan-dasar-20221216.html" class="waves-effect heading btn-anim has-ripple" title="Tingkatkan Skill Anggotanya Gaspala Smanda Gelar Latihan Dasar">Tingkatkan Skill Anggotanya Gaspala Smanda Gelar Latihan Dasar</a>
+            </div>
+            <div class="wrapberita">
+              <span class="number">2</span>
+              <a href="https://www.smandakebumen.sch.id/lihat/asah-skill-kepemimpinan-smanda-gelar-latihan-dasar-kepemimpinan-20221216.html" class="waves-effect heading btn-anim" title="Asah Skill Kepemimpinan SMANDA Gelar Latihan Dasar Kepemimpinan">Asah Skill Kepemimpinan SMANDA Gelar Latihan Dasar Kepemimpinan</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="devider atas">
+      <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 90 100" preserveAspectRatio="none">
+        <path d="M0 100 C 20 0 50 0 100 100 Z" />
+      </svg>
+    </div>
+    <section class="postingan">
+    <div class="headingsection" >
+      <h1>Postingan</h1>
+    </div> 
+      <div class="wrapper">
+        <div class="postwrap">
+          <div class="post" id="all">
+            <div class="grid">
+              <a href="https://www.smandakebumen.sch.id/author/Jurnalistik" class="label waves-effect" title="Cek Jurnalistik?">
+                <i class="fa fa-user"></i> Jurnalistik </a>
+              <div class="image waves-effect">
+                <img class="" src="https://www.smandakebumen.sch.id/assets/img/postingan/173ec013b9b997f893170c368318e0a5.jpg" data-src="https://www.smandakebumen.sch.id/assets/img/postingan/173ec013b9b997f893170c368318e0a5.jpg" alt="Dance Crew SMANDA Gelar Workshop di Sanggar Satria Kembar">
+                <a href="https://www.smandakebumen.sch.id/lihat/dance-crew-smanda-gelar-workshop-di-sanggar-satria-kembar-20230224.html" title="Dance Crew SMANDA Gelar Workshop di Sanggar Satria Kembar"></a>
+              </div>
+              <div class="box_desc">
+                <a href="https://www.smandakebumen.sch.id/lihat/dance-crew-smanda-gelar-workshop-di-sanggar-satria-kembar-20230224.html" class="title waves-effect" title="Dance Crew SMANDA Gelar Workshop di Sanggar Satria Kembar">
+                  <span>
+                    <h3>Dance Crew SMANDA Gelar Workshop di Sanggar Satria Kembar</h3>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="grid">
+              <a href="https://www.smandakebumen.sch.id/author/Jurnalistik" class="label waves-effect" title="Cek Jurnalistik?">
+                <i class="fa fa-user"></i> Jurnalistik </a>
+              <div class="image waves-effect has-ripple">
+                <img class="" src="https://www.smandakebumen.sch.id/assets/img/postingan/f56b03e310075dea10c6aa0d3ac88009.jpg" data-src="https://www.smandakebumen.sch.id/assets/img/postingan/f56b03e310075dea10c6aa0d3ac88009.jpg" alt="GASPALA Tanam 500 Bibit Nyamplung di Kawasan Konservasi Penyu Kaliratu">
+                <a href="https://www.smandakebumen.sch.id/lihat/gaspala-tanam-500-bibit-nyamplung-di-kawasan-konservasi-penyu-kaliratu-20230211.html" title="GASPALA Tanam 500 Bibit Nyamplung di Kawasan Konservasi Penyu Kaliratu"></a>
+              </div>
+              <div class="box_desc">
+                <a href="https://www.smandakebumen.sch.id/lihat/gaspala-tanam-500-bibit-nyamplung-di-kawasan-konservasi-penyu-kaliratu-20230211.html" class="title waves-effect" title="GASPALA Tanam 500 Bibit Nyamplung di Kawasan Konservasi Penyu Kaliratu">
+                  <span>
+                    <h3>GASPALA Tanam 500 Bibit Nyamplung di Kawasan Konservasi Penyu Kaliratu</h3>
+                  </span>
+                </a>
+              </div>
+            </div>
+            <div class="grid">
+              <a href="https://www.smandakebumen.sch.id/author/Jurnalistik" class="label waves-effect" title="Cek Jurnalistik?">
+                <i class="fa fa-user"></i> Jurnalistik </a>
+              <div class="image waves-effect">
+                <img class="" src="https://www.smandakebumen.sch.id/assets/img/postingan/0cec42f4bb222fab521215e4c0792a61.jpg" data-src="https://www.smandakebumen.sch.id/assets/img/postingan/0cec42f4bb222fab521215e4c0792a61.jpg" alt="Tim Lari Estafet SMANDA Berhasil Lolos Kejurnas SAC 2023">
+                <a href="https://www.smandakebumen.sch.id/lihat/tim-estafet-smanda-berhasil-lolos-kejurnas-sac-2023-20230206.html" title="Tim Lari Estafet SMANDA Berhasil Lolos Kejurnas SAC 2023"></a>
+              </div>
+              <div class="box_desc">
+                <a href="https://www.smandakebumen.sch.id/lihat/tim-estafet-smanda-berhasil-lolos-kejurnas-sac-2023-20230206.html" class="title waves-effect" title="Tim Lari Estafet SMANDA Berhasil Lolos Kejurnas SAC 2023">
+                  <span>
+                    <h3>Tim Lari Estafet SMANDA Berhasil Lolos Kejurnas SAC 2023</h3>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="post_stat">
+            <div class="alert alert-danger" id="s" style="display: none;"> Error! Terjadi kesalaahan saat mengambil data! </div>
+            <button class="btn btn-ln btn-anim has-ripple" id="t" e="4">
+              <span>Lebih Banyak</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="label">
+      <div class="wrapper">
+        <div class="wraplabel">
+          <a href="https://www.smandakebumen.sch.id/tagar/smanda" class="sublabel btn btn-anim waves-effect has-ripple">
+            <i class="fa fa-tag"></i>
+            <span>smanda</span>
+          </a>
+          <a href="https://www.smandakebumen.sch.id/tagar/sejarah" class="sublabel btn btn-anim waves-effect">
+            <i class="fa fa-tag"></i>
+            <span>sejarah</span>
+          </a>
+          <a href="https://www.smandakebumen.sch.id/tagar/visi" class="sublabel btn btn-anim waves-effect">
+            <i class="fa fa-tag"></i>
+            <span>visi</span>
+          </a>
+          <a href="https://www.smandakebumen.sch.id/tagar/misi" class="sublabel btn btn-anim waves-effect">
+            <i class="fa fa-tag"></i>
+            <span>misi</span>
+          </a>
+          <a href="https://www.smandakebumen.sch.id/tagar/visi-misi" class="sublabel btn btn-anim waves-effect">
+            <i class="fa fa-tag"></i>
+            <span>visi-misi</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="wrapper">
+        <div class="wrapcontact">
+          <div class="bagidua">
+            <div class="content">
+              <div class="heading">
+                <h1>Contact</h1>
+              </div>
+              <form id='kritiksaran' action="" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+                <div class="formtwo">
+                  <div class="input-field">
+                    <input class="validate" id="name_form" name="nama_kritiksaran" required="" type="text">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="name_form">Name</label>
+                  </div>
+                  <div class="input-field">
+                    <input class="validate" id="email_form" name="email_kritiksaran" required="" type="email">
+                    <span class="highlight"></span>
+                    <span class="bar"></span>
+                    <label for="email_form">E-mail</label>
+                  </div>
+                </div>
+                <div class="input-field">
+                  <textarea class="validate" name="pesan_kritiksaran" id="pesan_form" cols="10" rows="10" required="" type="text"></textarea>
+                  <span class="highlight"></span>
+                  <span class="bar"></span>
+                  <label for="pesan_form">Pesan</label>
+                </div>
+                <span class="pesan">*NB anda tidak perlu login untul mengisi kritik dan saran</span>
+                <div class="btn-group">
+                  <button class="btn btn-ln btn-anim" type="submit" id="submit">Kirim</button>
+                  <svg class="spinner" width="30px" height="30px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+                    <circle class="circle" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+                  </svg>
+                </div>
+              </form>
+            </div>
+            <div class="content">
+              <div class="heading alamat">
+                <h1>SMA Negeri 2 Kebumen</h1>
+                <div class="groupdesc">
+                  <a href="https://goo.gl/maps/ztKKwwCQYfDkGT5HA">
+                    <i class="fa fa-map-marker"></i>Jln. Cincin Kota No.8, Karangsari, Kebumen 54351 </a>
+                  <a href="tel:0287-381820">
+                    <i class="fa fa-phone"></i>0287-381820 </a>
+                  <a href="mailto:smanda.kbm@gmail.com">
+                    <i class="fa fa-envelope"></i>smanda.kbm@gmail.com </a>
+                </div>
+              </div>
+              <div class="google-maps">
+                <iframe loading="lazy" title="SMA Negeri 2 Kebumen" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.2447629247017!2d109.66529131437505!3d-7.656811077883902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7ac9f9e32e94dd%3A0xd19771a758ff5a4a!2sSMA+Negeri+2+Kebumen!5e0!3m2!1sid!2sid!4v1557541996105!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div id="search_popup" class="modal">
+      <h2>Cari Sesuatu...</h2>
+      <form class="search" action="search.html">
+        <input type="text" placeholder="Search" aria-label="search" name="query" />
+        <button class="btn btn-anim btn-color" type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+    </div>
+    <footer>
+      <div class="footerwrap wrapper">
+        <div class="post">
+          <div class="grid">
+            <div class="titlefooter">
+              <i class="fa fa-info-circle"></i>
+              <span>Tentang</span>
+            </div>
+            <div class="footercontent">
+              <ul>
+                <li>
+                  <a class="btn btn-anim" href="lihat/Sambutan-Kepala-Sekolah-20191119.html">
+                    <i class="fa fa-user"></i>Kepala Sekolah </a>
+                </li>
+                <li>
+                  <a class="btn btn-anim" href="lihat/Visi-dan-Misi-SMA-Negeri-2-Kebumen-20191129.html">
+                    <i class="fa fa-trophy"></i>Visi dan Misi </a>
+                </li>
+                <li>
+                  <a class="btn btn-anim" href="lihat/Sejarah-SMA-N-2-Kebumen-20191129.html">
+                    <i class="fa fa-history"></i>Sejarah </a>
+                </li>
+                <li>
+                  <a class="btn btn-anim" href="about.html">
+                    <i class="fa fa-users"></i>Pengembang Website </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid">
+            <div class="titlefooter">
+              <i class="fa fa-link"></i>
+              <span>Website Terkait</span>
+            </div>
+            <div class="footercontent">
+              <ul>
+                <li>
+                  <a class="btn btn-anim" href="pustaka-sub/index.html">Perpustakaan Candakarana</a>
+                </li>
+                <li>
+                  <a class="btn btn-anim" href="http://smandakebumen.wordpress.com/">OSIS SMA NEGERI 2 KEBUMEN</a>
+                </li>
+                <li>
+                  <a class="btn btn-anim" href="#/">SMITC SMANDA</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid card">
+            <div class="cardsmanda">
+              <div class="logosmanda">
+                <a href="#" class="logo waves-effect">
+                  <img src="user/assets/img/logo/smanda.png" alt="SMA Negeri 2 Kebumen">
+                  <span>SMA Negeri 2 Kebumen</span>
+                </a>
+              </div>
+              <div class="groupdesc">
+                <a href="https://goo.gl/maps/ztKKwwCQYfDkGT5HA">
+                  <i class="fa fa-map-marker"></i>Jln Cincin Kota No. 8, Karangsari, Kebumen 54351 </a>
+                <a href="tel:0287-381820">
+                  <i class="fa fa-phone"></i>0287-381820 </a>
+                <a href="mailto:smanda.kbm@gmail.com?subject=Hai%20Kak%20di%20sini&amp;body=Ganti%20pesan%20di%20sini">
+                  <i class="fa fa-envelope"></i>smanda.kbm@gmail.com </a>
+              </div>
+              <hr class="line">
+              <div class="sosmed">
+                <div class="social-buttons center">
+                  <a class="social-button facebook" href="https://web.facebook.com/SMA-Negeri-2-Kebumen-121930544582959/" target="_blank" rel="noreferrer noopener">
+                    <i class="fa fa-facebook"></i>
+                  </a>
+                  <a class="social-button twitter" href="https://twitter.com/officialOSIS2" target="_blank" rel="noreferrer noopener">
+                    <i class="fa fa-twitter"></i>
+                  </a>
+                  <a class="social-button email" href="http://sekolah.data.kemdikbud.go.id/index.php/chome/profil/cba73b77-51d3-4d7e-a49a-0b4e88e9db90" target="_blank" rel="noreferrer noopener">
+                    <i class="fa fa-info"></i>
+                  </a>
+                  <a class="social-button instagram" href="https://www.instagram.com/officialosis2/" target="_blank" rel="noreferrer noopener">
+                    <i class="fa fa-instagram"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="copyright">
-        &copy; Copyright <strong><span>Arsha</span></strong>. All Rights Reserved
+        <div class="wrapper">
+          <span>
+            <i class="fa fa-copyright"></i> 2019 - 2023 | SISTEM INFORMASI MANAJEMEN SEKOLAH SMA Negeri 2 Kebumen </span>
+          <span>Powered by <a href="#/" target="_blank" rel="noreferrer noopener">SMITC (SMANDA IT CLUB)</a> Created by <a href="https://id.wikipedia.org/wiki/Cinta" title="id:Cinta;en:Love">
+              <i class="fa fa-heart"></i>
+            </a>
+          </span>
+        </div>
       </div>
-      <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/arsha-free-bootstrap-html-template-corporate/ -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+    </footer>
+    <div id="search_popup" class="modal">
+      <h2>Cari Sesuatu...</h2>
+      <form class="search" action="search.html">
+        <input type="text" placeholder="Search" aria-label="search" name="query" />
+        <button class="btn btn-anim btn-color" type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+    </div>
+    <div class="overlay"></div>
+    <div class="backtotop hide waves-effect" id="backtotop">
+      <span></span>
+    </div>
+    <div class="wrapfab" id="fab">
+      <input id="fabbuton" type="checkbox" class="fabcheckbox" />
+      <label class="fabutton waves-effect" for="fabbuton">
+        <span class="fab_dots dots_1"></span>
+        <span class="fab_dots dots_2"></span>
+        <span class="fab_dots dots_3"></span>
+      </label>
+      <div class="fab_target">
+        <a href="about.html" class="fab_action action_1 waves-effect btn-anim" title="Tentang Developer">
+          <i class="fa fa-info"></i>
+        </a>
+        <a href="javascript:void(0)" class="fab_action action_2 waves-effect btn-anim" id="fullscreen" title="Fullscreen?">
+          <i class="fa fa-arrows-alt"></i>
+        </a>
+        <a href="index.html" class="fab_action action_3 waves-effect btn-anim" title="Utama">
+          <i class="fa fa-home"></i>
+        </a>
+        <a href="javascript:void(0)" class="fab_action action_4 waves-effect btn-anim" id="darkmode" title="Ubah Tema">
+          <i class="fa fa-lightbulb-o"></i>
+        </a>
+        <a href="index.html" class="fab_action action_5 waves-effect btn-anim" title="Kontak">
+          <i class="fa fa-address-card"></i>
+        </a>
       </div>
     </div>
-  </footer><!-- End Footer -->
-
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
-
-  <!-- Vendor JS Files -->
-  <script src="user/assets/vendor/aos/aos.js"></script>
-  <script src="user/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="user/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="user/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="user/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="user/assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="user/assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="user/assets/js/main.js"></script>
-
-</body>
-
+    <script type="text/javascript" src="user/assets/js/pages/landing.min.js"></script>
+    <script type="text/javascript" src="user/assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="user/assets/js/pages/core-landing.min.js"></script>
 </html>

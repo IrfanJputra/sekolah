@@ -121,7 +121,7 @@
               </li>
             </ul>
             <li class="nav-item">
-            <a href="logout.php" class="nav-link">
+            <a href="../logout.php" class="nav-link">
               <i class="nav-icon fas fa-power-off"></i>
               <p>
                 Log Out
