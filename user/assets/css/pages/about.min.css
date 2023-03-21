@@ -488,19 +488,6 @@ body.darkmode .mainav .logo {
     color: var(--white-mode)
 }
 
-.mainav .logo img,footer .logo img {
-    width: auto;
-    height: 50px
-}
-
-.mainav .logo span,footer .logo span {
-    margin-left: 14px;
-    font-weight: 600;
-    color: var(--dark);
-    display: block;
-    font-size: 22px;
-    max-width: 140px
-}
 
 .mainav .menu {
     margin: auto 0;

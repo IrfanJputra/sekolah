@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
   <?php include 'header.php' ?>
@@ -9,7 +8,7 @@
           <ul>
             <li>
               <a href="https://goo.gl/maps/ztKKwwCQYfDkGT5HA" target="_blank" rel="noreferrer noopener" class="waves-effect">
-                <i class="fa fa-map-marker"></i>Jln Cincin Kota No. 8, Karangsari, Kebumen 54351 </a>
+                <i class="fa fa-map-marker"></i>Jl. Panenga Raya V, Palangka Raya 73113 </a>
             </li>
             <li>
               <a href="tel:0287-381820" class="waves-effect">
@@ -22,6 +21,7 @@
           </ul>
         </nav>
       </div>
+
       <nav class="mainav" id="sticky_nav">
         <nav class="wrapper">
           <div class="logo waves-effect" id="mainavlogo">
@@ -36,15 +36,15 @@
             </div>
             <ul>
               <li>
-                <a class="waves-effect " href="index.html#!">
+                <a class="waves-effect " href="/sekolah">
                   <i class="fa fa-home mr-2"></i>Beranda </a>
               </li>
               <li>
-                <a class="waves-effect " href="lihat/Visi-dan-Misi-SMA-Negeri-2-Kebumen-29112019.html">
+                <a class="waves-effect " href="detail/Visi-Dan-Misi">
                   <i class="fa fa-star mr-2"></i>Visi dan Misi </a>
               </li>
               <li>
-                <a class="waves-effect " href="author.html">
+                <a class="waves-effect " href="profil.php">
                   <i class="fa fa-user mr-2"></i>Profil </a>
               </li>
               <li>
@@ -113,25 +113,36 @@
   <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
   <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
 </div> -->
+<?php include 'koneksi.php';
+$result = mysqli_query($conn,"SELECT * FROM tb_artikel WHERE id_artikel= 21");
+$data = mysqli_fetch_array($result);
+$text_short = substr($data['artikel'], 0, 200) . "...";
+?>
         <div class="utamapost ">
           <a href="#" class="image waves-effect" title="Terhenti 2 Tahun, Gaspala Smanda Kembali Telusuri Gua Petruk">
-            <img class="malas" src="user/assets/load_post.gif" data-src="user/assets/img/postingan/320ab55dad9be9fd77c695e96bcc291c.jpg" alt="Terhenti 2 Tahun, Gaspala Smanda Kembali Telusuri Gua Petruk" title="Gambar Terhenti 2 Tahun, Gaspala Smanda Kembali Telusuri Gua Petruk" />
+            <img class="malas" src="upload/<?=$data['gambar']?>" data-src="user/assets/img/postingan/320ab55dad9be9fd77c695e96bcc291c.jpg" alt="Terhenti 2 Tahun, Gaspala Smanda Kembali Telusuri Gua Petruk" title="Gambar Terhenti 2 Tahun, Gaspala Smanda Kembali Telusuri Gua Petruk" />
           </a>
           <div class="utamacontent">
-            <h2>Terhenti 2 Tahun, Gaspala Smanda Kembali Telusuri Gua Petruk</h2>
-            <span class="desc"> Setelah terhenti selama dua tahun karena pandemi, kegiatan telusur gua atau biasa disebut caving kembali dilaksanakan oleh Gabungan Siswa Pecinta Alam (Gaspala) SMA N 2 Kebumen. Kegiatan caving berlangsung pada Sabtu, 10 September 2022 dengan mengunjungi Gua Petruk, gua yang cukup familiar bagi para pelaku kegiatan alam khususnya di Kabupaten Kebumen. Ketua umum Gaspala, Mijile Pinten, mengatakan bahwa kegiatan ini yang pertama dalam program kerja kepengurusannya. Menurutnya, salah satu divisi yang ada di Gaspala yaitu divisi caving menjadi alasan&#8230; </span>
-            <a class="btn btn-anim btn-ln" href="lihat/gaspala-smanda-kembali-telusuri-gua-petruk-setelah-terhenti-selama-dua-tahun-20221118.html">Read more <i class="fa fa-chevron-right reverse"></i>
+            <h2><?=$data['judul']?></h2>
+            <span class="desc"> <?=$text_short?> </span>
+            <a class="btn btn-anim btn-ln" href="detail/Sambutan-Kepala-Sekolah">Read more <i class="fa fa-chevron-right reverse"></i>
             </a>
           </div>
         </div>
+
+<?php include 'koneksi.php';
+$result = mysqli_query($conn,"SELECT * FROM tb_artikel WHERE id_artikel= 22");
+$data = mysqli_fetch_array($result);
+$text_short = substr($data['artikel'], 0, 200) . "...";
+?>
         <div class="utamapost">
           <a href="#" class="image waves-effect" title="VOSDA SMANDA Raih Juara 3 TN CUP XII Magelang">
-            <img class="malas" src="user/assets/load_post.gif" data-src="user/assets/img/postingan/45c6d2b262bcc8840f2bd4d4b5760968.jpg" alt="VOSDA SMANDA Raih Juara 3 TN CUP XII Magelang" title="Gambar VOSDA SMANDA Raih Juara 3 TN CUP XII Magelang" />
+            <img class="malas" src="upload/<?=$data['gambar']?>" data-src="user/assets/img/postingan/45c6d2b262bcc8840f2bd4d4b5760968.jpg" alt="VOSDA SMANDA Raih Juara 3 TN CUP XII Magelang" title="Gambar VOSDA SMANDA Raih Juara 3 TN CUP XII Magelang" />
           </a>
           <div class="utamacontent">
-            <h2>VOSDA SMANDA Raih Juara 3 TN CUP XII Magelang</h2>
-            <span class="desc"> Talenta &ndash; Tim bola voli putra dan putri SMANDA Kebumen (VOSDA) berhasil membawa pulang juara tiga di TN CUP XII cabang olahraga bola voli yang diselenggarakan di SMA TARUNA NUSANTARA pada tanggal 26-29 Oktober 2022. Kepala sekolah SMAN 2 Kebumen menyampaikan bahwa beliau sangat bangga terhadap prestasi yang telah diraih tim bola voli SMANDA. &ldquo;Saya sebagai kepala sekolah sangat bangga sekali dan senang karena tim voli kita berhasil meraih juara tiga TN Cup di Magelang.&rdquo; Ujar Basir,S.Pd.,M.Pd. Selain&#8230; </span>
-            <a class="btn btn-anim btn-ln" href="lihat/vosda-smanda-raih-juara-3-tn-cup-xii-magelang-20221116.html">Read more <i class="fa fa-chevron-right reverse"></i>
+            <h2><?=$data['judul']?></h2>
+            <span class="desc"><?= $text_short?> </span>
+            <a class="btn btn-anim btn-ln" href="detail/Penerimaan-Siswa-Baru-Tahun-Ajaran-2023-2024">Read more <i class="fa fa-chevron-right reverse"></i>
             </a>
           </div>
         </div>
@@ -158,6 +169,7 @@
             <span class="icon">
               <i class="fa fa-newspaper-o"></i>
             </span>
+            <span class="title">49</span>
             <span class="title">PIP</span>
           </a>
           <a href="agenda.html" class="subicon btn-anim waves-effect">
@@ -169,6 +181,13 @@
         </div>
       </div>
     </section>
+
+    <?php
+      include 'koneksi.php';
+      $result = mysqli_query($conn, 'SELECT * FROM tb_artikel WHERE id_artikel = (SELECT MAX(id_artikel) FROM tb_artikel);');
+      $data = mysqli_fetch_array($result);
+      $date_str = date("d/m/Y", strtotime($data['tanggal']));
+    ?>
     <section class="berita">
       <div class="wrapper">
         <div class="headingsection">
@@ -180,13 +199,13 @@
           </div>
           <div class="content beritapost">
             <div class="wrapberita">
-              <span class="number">1</span>
-              <a href="https://www.smandakebumen.sch.id/lihat/tingkatkan-skill-anggotanya-gaspala-smanda-gelar-latihan-dasar-20221216.html" class="waves-effect heading btn-anim has-ripple" title="Tingkatkan Skill Anggotanya Gaspala Smanda Gelar Latihan Dasar">Tingkatkan Skill Anggotanya Gaspala Smanda Gelar Latihan Dasar</a>
+              <span class="number"><?=$date_str?></span>
+              <a href="detail/<?=str_replace(" ","-",$data['judul'])?>" class="waves-effect heading btn-anim has-ripple" title=""><?=$data['judul']?></a>
             </div>
-            <div class="wrapberita">
+            <!-- <div class="wrapberita">
               <span class="number">2</span>
               <a href="https://www.smandakebumen.sch.id/lihat/asah-skill-kepemimpinan-smanda-gelar-latihan-dasar-kepemimpinan-20221216.html" class="waves-effect heading btn-anim" title="Asah Skill Kepemimpinan SMANDA Gelar Latihan Dasar Kepemimpinan">Asah Skill Kepemimpinan SMANDA Gelar Latihan Dasar Kepemimpinan</a>
-            </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -206,7 +225,7 @@
 
           <?php
             include "koneksi.php";
-            $result = mysqli_query($conn, "SELECT * FROM tb_artikel, tb_tagline WHERE tb_artikel.id_tag = tb_tagline.id_tag");
+            $result = mysqli_query($conn, "SELECT * FROM tb_artikel, tb_tagline WHERE tb_artikel.id_tag = tb_tagline.id_tag ORDER BY tanggal DESC LIMIT 3");
             ?>
             <?php 
             while ($data= mysqli_fetch_array($result)){ ?>
@@ -238,7 +257,7 @@
         </div>
       </div>
     </section>
-    
+
     <section class="label">
       <div class="wrapper">
       <div class="wraplabel">
@@ -257,6 +276,48 @@
           <?php }
           ?>
       </div>
+      <br>
+      <div class="main-operasi">
+            <h1>Sistem Informasi</h1>
+            <div class="wrapoperasi">
+                <a href="#" class="operasi waves-effect btn-anim" target="_blank" rel="noopener noreferrer">
+                    <div class="image">
+                        <img src="user/assets/img/about/dapo.png" alt="Apache" />
+                    </div>
+                    <div class="text">
+                        <h3>Dapodik</h3>
+                        <p>v.2023.d</p>
+                    </div>
+                </a>
+                <a href="#" class="operasi waves-effect btn-anim" target="_blank" rel="noopener noreferrer">
+                    <div class="image">
+                        <img src="user/assets/img/about/tutwuri.png" alt="PHP" />
+                    </div>
+                    <div class="text">
+                        <h3>E-Rapor SD</h3>
+                        <p>v7.3.20</p>
+                    </div>
+                </a>
+                <a href="#" class="operasi waves-effect btn-anim" target="_blank" rel="noopener noreferrer">
+                    <div class="image">
+                        <img src="user/assets/img/about/siptk.png" alt="MySQL" />
+                    </div>
+                    <div class="text">
+                        <h3>SIP-PTK</h3>
+                        <p>v5.5.61</p>
+                    </div>
+                </a>
+                <a href="#" class="operasi waves-effect btn-anim" target="_blank" rel="noopener noreferrer">
+                    <div class="image">
+                        <img src="user/assets/img/about/php.png" alt="Codeigniter" />
+                    </div>
+                    <div class="text">
+                        <h3>PHP</h3>
+                        <p>v7.2</p>
+                    </div>
+                </a>
+            </div>
+        </div>
       </div>
     </section>
     <section class="contact">

@@ -1,42 +1,4 @@
 <footer>
-      <div class="footerwrap wrapper">
-        <div class="post">
-        <div class="grid card">
-            <div class="cardsmanda">
-              <div class="logosmanda">
-                <a href="#" class="logo waves-effect">
-                  <img src="user/assets/img/logo/logo.gif" alt="SMA Negeri 2 Kebumen">
-                 
-                </a>
-                </div>
-              <hr class="line">
-            </div>
-          </div>
-          
-          <div class="grid card">
-            <div class="cardsmanda">
-              <div class="logosmanda">
-                <a href="#" class="logo waves-effect">
-                  <img src="user/assets/img/logo/merdeka.png" alt="SMA Negeri 2 Kebumen">
-                 
-                </a>
-                </div>
-              <hr class="line">
-            </div>
-          </div>
-          <div class="grid card">
-            <div class="cardsmanda">
-              <div class="logosmanda">
-                <a href="#" class="logo waves-effect">
-                  <img src="user/assets/img/logo/tutwuri.png" alt="SMA Negeri 2 Kebumen">
-                  
-                </a>
-                </div>
-              <hr class="line">
-            </div>
-          </div>
-        </div>
-      </div>
       <div class="copyright">
         <div class="wrapper">
         <div class="sosmed">

@@ -16,11 +16,11 @@
                   <i class="fa fa-home mr-2"></i>Beranda </a>
               </li>
               <li>
-                <a class="waves-effect " href="lihat/Visi-dan-Misi-SMA-Negeri-2-Kebumen-29112019.html">
+                <a class="waves-effect " href="visi-misi.php">
                   <i class="fa fa-star mr-2"></i>Visi dan Misi </a>
               </li>
               <li>
-                <a class="waves-effect " href="author.html">
+                <a class="waves-effect " href="profil.php">
                   <i class="fa fa-user mr-2"></i>Profil </a>
               </li>
               <li>

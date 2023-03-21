@@ -12,7 +12,9 @@
   <!-- Theme style -->
   <link rel="stylesheet" href="../assets/css/adminlte.min.css">
   <script src="https://cdn.tiny.cloud/1/mm6l99xsdy8839w49co27k6rib54auzv3dsdlaehcanu59xq/tinymce/5/tinymce.min.js" referrerpolicy="origin"></script>
-
+  <style>
+    .tox-notification {display: none !important;}
+</style>
 </head>
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->

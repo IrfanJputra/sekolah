@@ -75,7 +75,7 @@ if(($data['id_artikel']) == 0) {
       <script type="text/javascript">
          var BASE_URL = '#';
       </script>
-      <script type="text/javascript" src="user/assets/js/jquery-3.4.1.min.js"></script>
+      <script type="text/javascript" src="../user/assets/js/jquery-3.4.1.min.js"></script>
    </head>
    <body>
       <section class="hero">
@@ -450,47 +450,7 @@ TALENTA - Dalam rangka reboisasi, Gaspala berkolaborasi bersama pihak Konservasi
                      </div>
                   </div>
                </div>
-               <div class="sidebar nowrap">
-                  <h2>Postingan Terbaru</h2>
-                  <div class="wrappost styledua" id="recent_id">
-                     <div class="post">
-                        <a href="https://www.smandakebumen.sch.id/lihat/dance-crew-smanda-gelar-workshop-di-sanggar-satria-kembar-20230224.html" class="image waves-effect">
-                           <img src="https://www.smandakebumen.sch.id/assets/img/postingan/173ec013b9b997f893170c368318e0a5.jpg" data-src="https://www.smandakebumen.sch.id/assets/img/postingan/173ec013b9b997f893170c368318e0a5.jpg" class="" alt="Dance Crew SMANDA Gelar Workshop di Sanggar Satria Kembar Image" title="Dance Crew SMANDA Gelar Workshop di Sanggar Satria Kembar Image">
-                        </a>
-                        <div class="box_desc">
-                           <a href="https://www.smandakebumen.sch.id/lihat/dance-crew-smanda-gelar-workshop-di-sanggar-satria-kembar-20230224.html" class="title waves-effect" title="Lihat Dance Crew SMANDA Gelar Workshop di Sanggar Satria Kembar?">
-                              <span>
-                                 <h3>Dance Crew SMANDA Gelar Workshop di Sanggar Satria…</h3>
-                              </span>
-                           </a>
-                        </div>
-                     </div>
-                     <div class="post">
-                        <a href="https://www.smandakebumen.sch.id/lihat/gaspala-tanam-500-bibit-nyamplung-di-kawasan-konservasi-penyu-kaliratu-20230211.html" class="image waves-effect">
-                           <img src="https://www.smandakebumen.sch.id/assets/img/postingan/f56b03e310075dea10c6aa0d3ac88009.jpg" data-src="https://www.smandakebumen.sch.id/assets/img/postingan/f56b03e310075dea10c6aa0d3ac88009.jpg" class="" alt="GASPALA Tanam 500 Bibit Nyamplung di Kawasan Konservasi Penyu Kaliratu Image" title="GASPALA Tanam 500 Bibit Nyamplung di Kawasan Konservasi Penyu Kaliratu Image">
-                        </a>
-                        <div class="box_desc">
-                           <a href="https://www.smandakebumen.sch.id/lihat/gaspala-tanam-500-bibit-nyamplung-di-kawasan-konservasi-penyu-kaliratu-20230211.html" class="title waves-effect" title="Lihat GASPALA Tanam 500 Bibit Nyamplung di Kawasan Konservasi Penyu Kaliratu?">
-                              <span>
-                                 <h3>GASPALA Tanam 500 Bibit Nyamplung di Kawasan Konservasi…</h3>
-                              </span>
-                           </a>
-                        </div>
-                     </div>
-                     <div class="post">
-                        <a href="https://www.smandakebumen.sch.id/lihat/tim-estafet-smanda-berhasil-lolos-kejurnas-sac-2023-20230206.html" class="image waves-effect">
-                           <img src="https://www.smandakebumen.sch.id/assets/img/postingan/0cec42f4bb222fab521215e4c0792a61.jpg" data-src="https://www.smandakebumen.sch.id/assets/img/postingan/0cec42f4bb222fab521215e4c0792a61.jpg" class="" alt="Tim Lari Estafet SMANDA Berhasil Lolos Kejurnas SAC 2023 Image" title="Tim Lari Estafet SMANDA Berhasil Lolos Kejurnas SAC 2023 Image">
-                        </a>
-                        <div class="box_desc">
-                           <a href="https://www.smandakebumen.sch.id/lihat/tim-estafet-smanda-berhasil-lolos-kejurnas-sac-2023-20230206.html" class="title waves-effect" title="Lihat Tim Lari Estafet SMANDA Berhasil Lolos Kejurnas SAC 2023?">
-                              <span>
-                                 <h3>Tim Lari Estafet SMANDA Berhasil Lolos Kejurnas SAC…</h3>
-                              </span>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
+
             </aside>
          </div>
       </section>
@@ -532,103 +492,8 @@ TALENTA - Dalam rangka reboisasi, Gaspala berkolaborasi bersama pihak Konservasi
             </button>
          </form>
       </div>
-      <footer>
-         <div class="footerwrap wrapper">
-            <div class="post">
-               <div class="grid">
-                  <div class="titlefooter">
-                     <i class="fa fa-info-circle"></i>
-                     <span>Tentang</span>
-                  </div>
-                  <div class="footercontent">
-                     <ul>
-                        <li>
-                           <a class="btn btn-anim" href="https://www.smandakebumen.sch.id/lihat/Sambutan-Kepala-Sekolah-20191119.html">
-                              <i class="fa fa-user"></i>Kepala Sekolah </a>
-                        </li>
-                        <li>
-                           <a class="btn btn-anim" href="https://www.smandakebumen.sch.id/lihat/Visi-dan-Misi-SMA-Negeri-2-Kebumen-20191129.html">
-                              <i class="fa fa-trophy"></i>Visi dan Misi </a>
-                        </li>
-                        <li>
-                           <a class="btn btn-anim" href="https://www.smandakebumen.sch.id/lihat/Sejarah-SMA-N-2-Kebumen-20191129.html">
-                              <i class="fa fa-history"></i>Sejarah </a>
-                        </li>
-                        <li>
-                           <a class="btn btn-anim" href="https://www.smandakebumen.sch.id/about">
-                              <i class="fa fa-users"></i>Pengembang Website </a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="grid">
-                  <div class="titlefooter">
-                     <i class="fa fa-link"></i>
-                     <span>Website Terkait</span>
-                  </div>
-                  <div class="footercontent">
-                     <ul>
-                        <li>
-                           <a class="btn btn-anim" href="http://pustaka.smandakebumen.sch.id">Perpustakaan Candakarana</a>
-                        </li>
-                        <li>
-                           <a class="btn btn-anim" href="http://smandakebumen.wordpress.com">OSIS SMA NEGERI 2 KEBUMEN</a>
-                        </li>
-                        <li>
-                           <a class="btn btn-anim" href="https://smitcsmandakebumen.blogspot.com/">SMITC SMANDA</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="grid card">
-                  <div class="cardsmanda">
-                     <div class="logosmanda">
-                        <a href="#" class="logo waves-effect">
-                           <img src="https://www.smandakebumen.sch.id/assets/img/logo/smanda.png" alt="SMA Negeri 2 Kebumen">
-                           <span>SMA Negeri 2 Kebumen</span>
-                        </a>
-                     </div>
-                     <div class="groupdesc">
-                        <a href="https://goo.gl/maps/ztKKwwCQYfDkGT5HA">
-                           <i class="fa fa-map-marker"></i>Jln Cincin Kota No. 8, Karangsari, Kebumen 54351 </a>
-                        <a href="tel:0287-381820">
-                           <i class="fa fa-phone"></i>0287-381820 </a>
-                        <a href="mailto:smanda.kbm@gmail.com?subject=Hai%20Kak%20di%20sini&amp;body=Ganti%20pesan%20di%20sini">
-                           <i class="fa fa-envelope"></i>smanda.kbm@gmail.com </a>
-                     </div>
-                     <hr class="line">
-                     <div class="sosmed">
-                        <div class="social-buttons center">
-                           <a class="social-button facebook" href="https://web.facebook.com/SMA-Negeri-2-Kebumen-121930544582959/" target="_blank" rel="noreferrer noopener">
-                              <i class="fa fa-facebook"></i>
-                           </a>
-                           <a class="social-button twitter" href="https://twitter.com/officialOSIS2" target="_blank" rel="noreferrer noopener">
-                              <i class="fa fa-twitter"></i>
-                           </a>
-                           <a class="social-button email" href="http://sekolah.data.kemdikbud.go.id/index.php/chome/profil/cba73b77-51d3-4d7e-a49a-0b4e88e9db90" target="_blank" rel="noreferrer noopener">
-                              <i class="fa fa-info"></i>
-                           </a>
-                           <a class="social-button instagram" href="https://www.instagram.com/officialosis2/" target="_blank" rel="noreferrer noopener">
-                              <i class="fa fa-instagram"></i>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="copyright">
-            <div class="wrapper">
-               <span>
-                  <i class="fa fa-copyright"></i> 2019 - 2023 | SISTEM INFORMASI MANAJEMEN SEKOLAH SMA Negeri 2 Kebumen </span>
-               <span>Powered by <a href="https://smitcsmandakebumen.blogspot.com/" target="_blank" rel="noreferrer noopener">SMITC (SMANDA IT CLUB)</a> Created by <a href="https://id.wikipedia.org/wiki/Cinta" title="id:Cinta;en:Love">
-                     <i class="fa fa-heart"></i>
-                  </a>
-               </span>
-            </div>
-         </div>
-      </footer>
-      <script type="text/javascript" src="user/assets/js/postingan/postingan.min.js"></script>
-      <script type="text/javascript" src="user/assets/js/postingan/postingan-core.min.js"></script>
+      <?php include 'footer.php'?>
+      <script type="text/javascript" src="../user/assets/js/postingan/postingan.min.js"></script>
+      <script type="text/javascript" src="../user/assets/js/postingan/postingan-core.min.js"></script>
    </body>
 </html>

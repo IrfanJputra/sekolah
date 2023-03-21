@@ -51,6 +51,7 @@
     <meta name="keywords" content="smanda,sman 2 kebumen,sma negeri 2 kebumen,smitc,smitc cms,sma,pelajar,kebumen,jawa tengah,indonesia" />
     <meta name="description" content="SMA Negeri 2 Kebumen adalah sekolah yang terletak di Kota Kebumen, Provinsi Jawa Tengah. Website ini adalah website resmi SMA NEGERI 2 KEBUMEN" />
     <link rel="stylesheet" type="text/css" href="user/assets/css/pages/landing.min.css" />
+    <link rel="stylesheet" type="text/css" href="user/assets/css/pages/about.min.css" />
     <link rel="stylesheet" type="text/css" href="user/assets/css/swiper.min.css" />
     <link rel="stylesheet" type="text/css" href="user/assets/css/font-awesome.min.css">
     <script type="text/javascript">

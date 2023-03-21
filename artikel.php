@@ -129,7 +129,11 @@
                   <div class="post">
                   <?php
             include "koneksi.php";
-            $result = mysqli_query($conn, "SELECT * FROM tb_artikel, tb_tagline WHERE tb_artikel.id_tag = tb_tagline.id_tag");
+                        // Variabel untuk pagination
+            $page = isset($_GET['page']) ? $_GET['page'] : 1;
+            $limit = 4; // Jumlah data per halaman
+            $start = ($page - 1) * $limit; // Mulai dari data ke-berapa
+            $result = mysqli_query($conn, "SELECT * FROM tb_artikel, tb_tagline WHERE tb_artikel.id_tag = tb_tagline.id_tag ORDER BY tanggal DESC LIMIT $start, $limit");
             ?>
             <?php 
             while ($data= mysqli_fetch_array($result)){ ?>
@@ -152,10 +156,51 @@
             ?>
                      
                   </div>
+
+
+
+                  
                   <div class="wrappagination">
                      <ul class="pagination">
-                        <li class="page-item active">
-                           <span class="btn btn-anim">1</span>
+                     <?php
+                  // Menampilkan link pagination
+                  $sql_total = "SELECT COUNT(*) AS total FROM tb_artikel";
+                  $result_total = mysqli_query($conn, $sql_total);
+                  $row_total = mysqli_fetch_assoc($result_total);
+                  $total = $row_total['total'];
+                  $pages = ceil($total / $limit); // Jumlah halaman
+                  $prev = $page - 1; // Halaman sebelumnya
+                  $next = $page + 1; // Halaman berikutnya
+                  $jumlah_number = 1; //jumlah halaman ke kanan dan kiri dari halaman yang aktif
+                  $start_number = ($page > $jumlah_number)? $page - $jumlah_number : 1;
+                  $end_number = ($page < ($pages - $jumlah_number))? $page + $jumlah_number : $pages;
+                  
+                  if($page == 1){
+                    echo '<li class="page-item disabled"><a class="page-link" href="#">First</a></li>';
+                    echo '<li class="page-item disabled"><a class="page-link" href="#"><span aria-hidden="true">&laquo;</span></a></li>';
+                  } else {
+                    $prev = ($page > 1)? $page - 1 : 1;
+                    echo '<li class="page-item"><a class="page-link" href="?page=1">First</a></li>';
+                    echo '<li class="page-item"><a class="page-link" href="?page='.$prev.'" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>';
+                  }
+    
+                  for($i = $start_number; $i <= $end_number; $i++){
+                    $link_active = ($page == $i)? 'active' : '';
+                    echo '<li class="page-item '.$link_active.'"><a class="page-link" href="?page='.$i.'">'.$i.'</a></li>';
+                  }
+    
+                  if($page == $pages){
+                    echo '<li class="page-item disabled"><a class="page-link" href="#"><span aria-hidden="true">&raquo;</span></a></li>';
+                    echo '<li class="page-item disabled"><a class="page-link" href="#">Last</a></li>';
+                  } else {
+                    $next = ($page < $pages)? $page + 1 : $pages;
+                    echo '<li class="page-item"><a class="page-link" href="?page='.$next.'" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>';
+                    echo '<li class="page-item"><a class="page-link" href="?page='.$pages.'">Last</a></li>';
+                  }
+                  ?>
+
+                        <!-- <li class="page-item active">
+
                         </li>
                         <li class="page-item">
                            <a href="#" data-ci-pagination-page="2">2</a>
@@ -170,7 +215,7 @@
                         <li class="page-item page-main">
                            <a href="#" data-ci-pagination-page="41">Last <i class="fa fa-angle-double-right "></i>
                            </a>
-                        </li>
+                        </li> -->
                      </ul>
                   </div>
                </div>
@@ -295,102 +340,7 @@
             </button>
          </form>
       </div>
-      <footer>
-         <div class="footerwrap wrapper">
-            <div class="post">
-               <div class="grid">
-                  <div class="titlefooter">
-                     <i class="fa fa-info-circle"></i>
-                     <span>Tentang</span>
-                  </div>
-                  <div class="footercontent">
-                     <ul>
-                        <li>
-                           <a class="btn btn-anim" href="https://www.smandakebumen.sch.id/lihat/Sambutan-Kepala-Sekolah-20191119.html">
-                              <i class="fa fa-user"></i>Kepala Sekolah </a>
-                        </li>
-                        <li>
-                           <a class="btn btn-anim" href="https://www.smandakebumen.sch.id/lihat/Visi-dan-Misi-SMA-Negeri-2-Kebumen-20191129.html">
-                              <i class="fa fa-trophy"></i>Visi dan Misi </a>
-                        </li>
-                        <li>
-                           <a class="btn btn-anim" href="https://www.smandakebumen.sch.id/lihat/Sejarah-SMA-N-2-Kebumen-20191129.html">
-                              <i class="fa fa-history"></i>Sejarah </a>
-                        </li>
-                        <li>
-                           <a class="btn btn-anim" href="https://www.smandakebumen.sch.id/about">
-                              <i class="fa fa-users"></i>Pengembang Website </a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="grid">
-                  <div class="titlefooter">
-                     <i class="fa fa-link"></i>
-                     <span>Website Terkait</span>
-                  </div>
-                  <div class="footercontent">
-                     <ul>
-                        <li>
-                           <a class="btn btn-anim" href="http://pustaka.smandakebumen.sch.id">Perpustakaan Candakarana</a>
-                        </li>
-                        <li>
-                           <a class="btn btn-anim" href="http://smandakebumen.wordpress.com">OSIS SMA NEGERI 2 KEBUMEN</a>
-                        </li>
-                        <li>
-                           <a class="btn btn-anim" href="https://smitcsmandakebumen.blogspot.com/">SMITC SMANDA</a>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
-               <div class="grid card">
-                  <div class="cardsmanda">
-                     <div class="logosmanda">
-                        <a href="#" class="logo waves-effect">
-                           <img src="user/assets/img/logo/logo.gif" alt="SMA Negeri 2 Kebumen">
-                           <span>SMA Negeri 2 Kebumen</span>
-                        </a>
-                     </div>
-                     <div class="groupdesc">
-                        <a href="https://goo.gl/maps/ztKKwwCQYfDkGT5HA">
-                           <i class="fa fa-map-marker"></i>Jln Cincin Kota No. 8, Karangsari, Kebumen 54351 </a>
-                        <a href="tel:0287-381820">
-                           <i class="fa fa-phone"></i>0287-381820 </a>
-                        <a href="mailto:smanda.kbm@gmail.com?subject=Hai%20Kak%20di%20sini&amp;body=Ganti%20pesan%20di%20sini">
-                           <i class="fa fa-envelope"></i>smanda.kbm@gmail.com </a>
-                     </div>
-                     <hr class="line">
-                     <div class="sosmed">
-                        <div class="social-buttons center">
-                           <a class="social-button facebook" href="#" target="_blank" rel="noreferrer noopener">
-                              <i class="fa fa-facebook"></i>
-                           </a>
-                           <a class="social-button twitter" href="#" target="_blank" rel="noreferrer noopener">
-                              <i class="fa fa-twitter"></i>
-                           </a>
-                           <a class="social-button email" href="#" target="_blank" rel="noreferrer noopener">
-                              <i class="fa fa-info"></i>
-                           </a>
-                           <a class="social-button instagram" href="#" target="_blank" rel="noreferrer noopener">
-                              <i class="fa fa-instagram"></i>
-                           </a>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="copyright">
-            <div class="wrapper">
-               <span>
-                  <i class="fa fa-copyright"></i> 2019 - 2023 | SISTEM INFORMASI MANAJEMEN SEKOLAH SMA Negeri 2 Kebumen </span>
-               <span>Powered by <a href="https://smitcsmandakebumen.blogspot.com/" target="_blank" rel="noreferrer noopener">SMITC (SMANDA IT CLUB)</a> Created by <a href="https://id.wikipedia.org/wiki/Cinta" title="id:Cinta;en:Love">
-                     <i class="fa fa-heart"></i>
-                  </a>
-               </span>
-            </div>
-         </div>
-      </footer>
+      <?php include 'footer.php' ?>
       <script type="text/javascript" src="user/assets/js/pages/postingan_type.min.js"></script>
       <script type="text/javascript" src="user/assets/js/pages/pages-core.min.js"></script>
    </body>

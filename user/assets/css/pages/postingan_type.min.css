@@ -1771,14 +1771,13 @@ html {
     }
   }
   footer {
-    padding: 35px 0 0;
     position: relative;
     z-index: 15;
     background: var(--white);
     -webkit-box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
     box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
-    border-top: 5px solid var(--main);
+
   }
   footer .footerwrap,
   .footer .footerwrap {

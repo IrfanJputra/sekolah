@@ -1,12 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HALAMAN TIDAK DITEMUKAN</title>
-</head>
-<body>
-    <H1>KASIHAN</H1>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>404 - Halaman Tidak Ditemukan</title>
+		<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+        <meta content='SMA Negeri 2 Kebumen' property='og:site_name'>
+        <meta content='SMA Negeri 2 Kebumen' property='og:title'>
+        <meta content='website' property='og:type'>
+        <link href='https://www.smandakebumen.sch.id/' rel='openid.delegate'>
+        <link href='https://www.smandakebumen.sch.id/' rel='canonical'>
+        <meta content='https://www.smandakebumen.sch.id/' property='og:url'>
+        <meta content='SMITC_CMS' name='generator'>
+        <meta content='https://www.smandakebumen.sch.id/assets/img/smanda.png' property='og:image'>
+        <link href='https://www.smandakebumen.sch.id/assets/icon/favicon.ico' rel='icon' type='image/x-icon'>
+        <link href="https://www.smandakebumen.sch.id/assets/icon/favicon.ico" rel="shortcut icon">
+        <link href='https://www.smandakebumen.sch.id/assets/icon/favicon-32x32.png' rel='icon' sizes='32x32'>
+        <link href='https://www.smandakebumen.sch.id/assets/icon/android-icon-192x192.png' rel='icon' sizes='192x192'>
+        <link href='https://www.smandakebumen.sch.id/assets/icon/apple-icon-180x180.png' rel='apple-touch-icon-precomposed'>
+        <meta content='https://www.smandakebumen.sch.id/assets/icon/ms-icon-144x144.png' name='msapplication-TileImage'>
+        <meta content='#49952E' name='msapplication-navbutton-color'>
+        <meta content='#49952E' name='apple-mobile-web-app-status-bar-style'>
+        <meta content='#49952E' name='theme-color'>
+        <meta content='Indonesia' name='gßeo.placename'>
+        <meta content='SMITC CMS ' name='Author'>
+        <meta content='general' name='rating'>
+        <meta content='id' name='geo.country'>
+        <style type="text/css">
+            html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{-webkit-box-sizing:content-box;-moz-box-sizing:content-box;box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;-moz-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner{border-style:none;padding:0}button:-moz-focusring,[type="button"]:-moz-focusring,[type="reset"]:-moz-focusring,[type="submit"]:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type="checkbox"],[type="radio"]{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;padding:0}[type="number"]::-webkit-inner-spin-button,[type="number"]::-webkit-outer-spin-button{height:auto}[type="search"]{-webkit-appearance:textfield;outline-offset:-2px}[type="search"]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}template{display:none}[hidden]{display:none}@font-face{font-family:'Inconsolata';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/inconsolata/v19/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp2I7WRL2l2eY.woff2) format("woff2");unicode-range:U+0102-0103,U+0110-0111,U+0128-0129,U+0168-0169,U+01A0-01A1,U+01AF-01B0,U+1EA0-1EF9,U+20AB}@font-face{font-family:'Inconsolata';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/inconsolata/v19/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp2I7WRP2l2eY.woff2) format("woff2");unicode-range:U+0100-024F,U+0259,U+1E00-1EFF,U+2020,U+20A0-20AB,U+20AD-20CF,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:'Inconsolata';font-style:normal;font-weight:700;font-stretch:100%;font-display:swap;src:url(https://fonts.gstatic.com/s/inconsolata/v19/QldgNThLqRwH-OJ1UHjlKENVzkWGVkL3GZQmAwLYxYWI2qfdm7Lpp2I7WR32lw.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}body *{-webkit-touch-callout:none;-khtml-user-select:none;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none}body{background:#f3f3f3;color:#fff;font-family:'Inconsolata',monospace;overflow:hidden;min-height:100vh;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}a.linkall{position:fixed;z-index:10;width:100%;height:100%}.content{max-width:500px;width:90%;height:300px;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);-moz-transform:translate(-50%,-50%);-ms-transform:translate(-50%,-50%);-o-transform:translate(-50%,-50%);transform:translate(-50%,-50%);background-color:#333;padding:45px 10px 20px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;-webkit-box-shadow:0 0 25px rgba(0,0,0,0.25);-moz-box-shadow:0 0 25px rgba(0,0,0,0.25);box-shadow:0 0 25px rgba(0,0,0,0.25);-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0}.content .browser{background:#f9f9f3;position:absolute;top:0;left:0;right:0;padding:5px;overflow:hidden;-webkit-border-radius:5px 5px 0 0;-moz-border-radius:5px 5px 0 0;border-radius:5px 5px 0 0}.content .browser_btn{display:inline-block;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%;width:15px;height:15px;margin-right:5px}.content .browser .close{background:#fc635d}.content .browser .min{background:#fdbc40}.content .browser .max{background:#34c84a}.content .text{margin:auto}.content .text h1{font-size:130px;margin:0 10px 5px;text-align:center}.content .typewrite{position:relative;top:50%;width:240px;font-size:18px;margin:0 auto;border-right:2px solid rgba(255,255,255,.75);text-align:center;white-space:nowrap;overflow:hidden;-webkit-transform:translateY(-50%);-moz-transform:translateY(-50%);-ms-transform:translateY(-50%);-o-transform:translateY(-50%);transform:translateY(-50%);-webkit-animation:ketikan 4s steps(36) 1s 1 normal both,kursor 500ms steps(36) infinite normal;-moz-animation:ketikan 4s steps(36) 1s 1 normal both,kursor 500ms steps(36) infinite normal;-o-animation:ketikan 4s steps(36) 1s 1 normal both,kursor 500ms steps(36) infinite normal;animation:ketikan 4s steps(36) 1s 1 normal both,kursor 500ms steps(36) infinite normal}.area{background:#f3f3f3;width:100%;height:100vh;position:fixed;z-index:-1}.circles{position:absolute;top:0;left:0;width:100%;height:100%;overflow:hidden}.circles li{position:absolute;display:block;list-style:none;width:20px;height:20px;background:rgba(0,0,0,0.1);-webkit-animation:animate 25s linear infinite;-moz-animation:animate 25s linear infinite;-o-animation:animate 25s linear infinite;animation:animate 25s linear infinite;bottom:-150px}.circles li:nth-child(1){left:25%;width:80px;height:80px;-webkit-animation-delay:0;-moz-animation-delay:0;-o-animation-delay:0;animation-delay:0}.circles li:nth-child(2){left:10%;width:20px;height:20px;-webkit-animation-delay:2s;-moz-animation-delay:2s;-o-animation-delay:2s;animation-delay:2s;-webkit-animation-duration:12s;-moz-animation-duration:12s;-o-animation-duration:12s;animation-duration:12s}.circles li:nth-child(3){left:70%;width:20px;height:20px;-webkit-animation-delay:4s;-moz-animation-delay:4s;-o-animation-delay:4s;animation-delay:4s}.circles li:nth-child(4){left:40%;width:60px;height:60px;-webkit-animation-delay:0;-moz-animation-delay:0;-o-animation-delay:0;animation-delay:0;-webkit-animation-duration:18s;-moz-animation-duration:18s;-o-animation-duration:18s;animation-duration:18s}.circles li:nth-child(5){left:65%;width:20px;height:20px;-webkit-animation-delay:0;-moz-animation-delay:0;-o-animation-delay:0;animation-delay:0}.circles li:nth-child(6){left:75%;width:110px;height:110px;-webkit-animation-delay:3s;-moz-animation-delay:3s;-o-animation-delay:3s;animation-delay:3s}.circles li:nth-child(7){left:35%;width:150px;height:150px;-webkit-animation-delay:7s;-moz-animation-delay:7s;-o-animation-delay:7s;animation-delay:7s}.circles li:nth-child(8){left:50%;width:25px;height:25px;-webkit-animation-delay:15s;-moz-animation-delay:15s;-o-animation-delay:15s;animation-delay:15s;-webkit-animation-duration:45s;-moz-animation-duration:45s;-o-animation-duration:45s;animation-duration:45s}.circles li:nth-child(9){left:20%;width:15px;height:15px;-webkit-animation-delay:2s;-moz-animation-delay:2s;-o-animation-delay:2s;animation-delay:2s;-webkit-animation-duration:35s;-moz-animation-duration:35s;-o-animation-duration:35s;animation-duration:35s}.circles li:nth-child(10){left:85%;width:150px;height:150px;-webkit-animation-delay:0;-moz-animation-delay:0;-o-animation-delay:0;animation-delay:0;-webkit-animation-duration:11s;-moz-animation-duration:11s;-o-animation-duration:11s;animation-duration:11s}@-webkit-keyframes ketikan{from{width:0}to{width:240px}}@-moz-keyframes ketikan{from{width:0}to{width:240px}}@-o-keyframes ketikan{from{width:0}to{width:240px}}@keyframes ketikan{from{width:0}to{width:240px}}@-webkit-keyframes kursor{from{border-right-color:rgba(255,255,255,.75)}to{border-right-color:transparent}}@-moz-keyframes kursor{from{border-right-color:rgba(255,255,255,.75)}to{border-right-color:transparent}}@-o-keyframes kursor{from{border-right-color:rgba(255,255,255,.75)}to{border-right-color:transparent}}@keyframes kursor{from{border-right-color:rgba(255,255,255,.75)}to{border-right-color:transparent}}@-webkit-keyframes animate{0%{opacity:1;-webkit-border-radius:0;border-radius:0}100%{-webkit-transform:translateY(-1000px) rotate(720deg);transform:translateY(-1000px) rotate(720deg);opacity:0;-webkit-border-radius:50%;border-radius:50%}}@-moz-keyframes animate{0%{opacity:1;-moz-border-radius:0;border-radius:0}100%{-moz-transform:translateY(-1000px) rotate(720deg);transform:translateY(-1000px) rotate(720deg);opacity:0;-moz-border-radius:50%;border-radius:50%}}@-o-keyframes animate{0%{opacity:1;border-radius:0}100%{-o-transform:translateY(-1000px) rotate(720deg);transform:translateY(-1000px) rotate(720deg);opacity:0;border-radius:50%}}@keyframes animate{0%{opacity:1;-webkit-border-radius:0;-moz-border-radius:0;border-radius:0}100%{-webkit-transform:translateY(-1000px) rotate(720deg);-moz-transform:translateY(-1000px) rotate(720deg);-o-transform:translateY(-1000px) rotate(720deg);transform:translateY(-1000px) rotate(720deg);opacity:0;-webkit-border-radius:50%;-moz-border-radius:50%;border-radius:50%}}
+        </style>
+	</head>
+	<body>
+		<a href="/sekolah" class="linkall"></a>
+		<div class="area">
+			<ul class="circles">
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+				<li></li>
+			</ul>
+		</div>
+		<div class="content">
+			<div class="browser">
+				<span class="close browser_btn"></span>
+				<span class="min browser_btn"></span>
+				<span class="max browser_btn"></span>
+			</div>
+			<div class="text">
+				<h1>404</h1>
+				<p class="typewrite">Halaman tidak ditemukan...</p>
+			</div>
+		</div>
+	</body>
 </html>

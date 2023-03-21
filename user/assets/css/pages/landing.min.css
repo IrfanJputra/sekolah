@@ -805,7 +805,14 @@ html {
   }
   section.label,
   footer .copyright,
-  .postingan .box_desc {
+  .postingan {
+    /* -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
+
+  }
+  
+  .box_desc {
     -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
@@ -1488,7 +1495,7 @@ html {
   }
   .berita .wrapberita .number {
     color: var(--dark);
-    padding: 10px 14px;
+    padding: 19px 14px;
     font-size: 18px;
     -webkit-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.2);
@@ -1635,7 +1642,7 @@ html {
     padding: 15px 0;
     position: relative;
     z-index: 15;
-    background: var(--white);
+    background: var(--white-dark);
   }
   .label .wraplabel {
     display: -webkit-box;
