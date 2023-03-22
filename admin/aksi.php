@@ -1,3 +1,12 @@
+<?php
+session_start();
+$_SESSION ['halaman']='index.php';
+if( !isset($_SESSION["level"]) ) {
+	header("Location: ../login.php");
+	exit;
+}
+?>
+
 <!DOCTYPE html>
 <html>
 <head>

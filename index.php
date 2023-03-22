@@ -7,16 +7,13 @@
         <nav class="wrapper">
           <ul>
             <li>
-              <a href="https://goo.gl/maps/ztKKwwCQYfDkGT5HA" target="_blank" rel="noreferrer noopener" class="waves-effect">
+              <a href="https://goo.gl/maps/UguyXTrNLRqXpkRW9" target="_blank" rel="noreferrer noopener" class="waves-effect">
                 <i class="fa fa-map-marker"></i>Jl. Panenga Raya V, Palangka Raya 73113 </a>
             </li>
+
             <li>
-              <a href="tel:0287-381820" class="waves-effect">
-                <i class="fa fa-phone"></i>0287-381820 </a>
-            </li>
-            <li>
-              <a href="mailto:smanda.kbm@gmail.com" class="waves-effect">
-                <i class="fa fa-envelope"></i>smanda.kbm@gmail.com </a>
+              <a href="mailto:sdnkerengbangkirai3@gmail.com" class="waves-effect">
+                <i class="fa fa-envelope"></i>sdnkerengbangkirai3@gmail.com </a>
             </li>
           </ul>
         </nav>
@@ -25,7 +22,7 @@
       <nav class="mainav" id="sticky_nav">
         <nav class="wrapper">
           <div class="logo waves-effect" id="mainavlogo">
-            <img src="user/assets/img/logo/logo.gif" alt="SMA Negeri 2 Kebumen">
+            <img src="user/assets/img/logo/logo.gif" alt="SD Negeri 3 Kereng Bangkirai">
             <span>SD Negeri 3 Kereng Bangkirai</span>
           </div>
           <div class="menu">
@@ -40,7 +37,7 @@
                   <i class="fa fa-home mr-2"></i>Beranda </a>
               </li>
               <li>
-                <a class="waves-effect " href="detail/Visi-Dan-Misi">
+                <a class="waves-effect " href="detail/visi-dan-misi">
                   <i class="fa fa-star mr-2"></i>Visi dan Misi </a>
               </li>
               <li>
@@ -78,27 +75,19 @@
         <!-- slide -->
       <!-- <div class="swiper-container swiper-container-initialized swiper-container-horizontal">
   <div class="swiper-wrapper" style="transition-duration: 5ms; transform: translate3d(-1600px, 0px, 0px);">
-    <div class="swiper-slide" data-swiper-slide-index="0" style="width: 800px;">
-      <div class="postingan">
-        <div class="image waves-effect">
-          <img src="user/assets/img/postingan/0cec42f4bb222fab521215e4c0792a61.jpg" alt="Postingan 1" title="Tim Lari Estafet SMANDA Berhasil Lolos Kejurnas SAC 2023 image" class="swiper-lazy swiper-lazy-loaded">
-          <a href="#" title="Tim Lari Estafet SMANDA Berhasil Lolos Kejurnas SAC 2023"></a>
-        </div>
-      </div>
-    </div>
     <div class="swiper-slide" data-swiper-slide-index="1" style="width: 800px;">
       <div class="postingan">
         <div class="image waves-effect">
-          <img src="user/assets/img/postingan/72b59fafb52906b549a1bc3ac735ed3d.jpg" alt="Postingan 2" title="Futsal Putri SMANDA Rebut 2 Juara Sekaligus Dalam Ajang Olahraga SMANDA 2022 image" class="swiper-lazy swiper-lazy-loaded">
-          <a href="#" title="Futsal Putri SMANDA Rebut 2 Juara Sekaligus Dalam Ajang Olahraga SMANDA 2022"></a>
+          <img src="user/assets/img/postingan/72b59fafb52906b549a1bc3ac735ed3d.jpg" alt="Postingan 2"  class="swiper-lazy swiper-lazy-loaded">
+          <a href="#" title=""></a>
         </div>
       </div>
     </div>
     <div class="swiper-slide swiper-slide-prev" data-swiper-slide-index="2" style="width: 800px;">
       <div class="postingan">
         <div class="image waves-effect">
-          <img src="user/assets/img/postingan/c2aea85381c491d8567e4527fa736520.jpg" alt="Postingan 3" title="Siswi Inklusi SMANDA Raih Juara 2 Lomba Digital Art image" class="swiper-lazy swiper-lazy-loaded">
-          <a href="#" title="Siswi Inklusi SMANDA Raih Juara 2 Lomba Digital Art"></a>
+          <img src="user/assets/img/postingan/c2aea85381c491d8567e4527fa736520.jpg" alt="Postingan 3"  class="swiper-lazy swiper-lazy-loaded">
+          <a href="#" title=""></a>
         </div>
       </div>
     </div>
@@ -114,65 +103,83 @@
   <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
 </div> -->
 <?php include 'koneksi.php';
+include 'function.php';
 $result = mysqli_query($conn,"SELECT * FROM tb_artikel WHERE id_artikel= 21");
 $data = mysqli_fetch_array($result);
-$text_short = substr($data['artikel'], 0, 200) . "...";
+$judul = $data['judul'];
+$url_slug = slugify($judul);
+$text_short = substr($data['artikel'], 0, 500) . "...";
 ?>
         <div class="utamapost ">
-          <a href="#" class="image waves-effect" title="Terhenti 2 Tahun, Gaspala Smanda Kembali Telusuri Gua Petruk">
-            <img class="malas" src="upload/<?=$data['gambar']?>" data-src="user/assets/img/postingan/320ab55dad9be9fd77c695e96bcc291c.jpg" alt="Terhenti 2 Tahun, Gaspala Smanda Kembali Telusuri Gua Petruk" title="Gambar Terhenti 2 Tahun, Gaspala Smanda Kembali Telusuri Gua Petruk" />
+          <a href="#" class="image waves-effect" title="">
+            <img class="malas" src="upload/<?=$data['gambar']?>" data-src="" alt="" title="" />
           </a>
           <div class="utamacontent">
             <h2><?=$data['judul']?></h2>
             <span class="desc"> <?=$text_short?> </span>
-            <a class="btn btn-anim btn-ln" href="detail/Sambutan-Kepala-Sekolah">Read more <i class="fa fa-chevron-right reverse"></i>
+            <a class="btn btn-anim btn-ln" href="detail/<?=$url_slug?>">Read more <i class="fa fa-chevron-right reverse"></i>
             </a>
           </div>
         </div>
 
 <?php include 'koneksi.php';
-$result = mysqli_query($conn,"SELECT * FROM tb_artikel WHERE id_artikel= 22");
+$result = mysqli_query($conn,"SELECT * FROM tb_artikel ORDER BY id_artikel DESC");
 $data = mysqli_fetch_array($result);
-$text_short = substr($data['artikel'], 0, 200) . "...";
+$judul = $data['judul'];
+$url_slug = slugify($judul);
+$text_short = substr($data['artikel'], 0, 500) . "...";
 ?>
         <div class="utamapost">
-          <a href="#" class="image waves-effect" title="VOSDA SMANDA Raih Juara 3 TN CUP XII Magelang">
-            <img class="malas" src="upload/<?=$data['gambar']?>" data-src="user/assets/img/postingan/45c6d2b262bcc8840f2bd4d4b5760968.jpg" alt="VOSDA SMANDA Raih Juara 3 TN CUP XII Magelang" title="Gambar VOSDA SMANDA Raih Juara 3 TN CUP XII Magelang" />
+          <a href="#" class="image waves-effect" title="">
+            <img class="malas" src="upload/<?=$data['gambar']?>" data-src="" alt="" title="" />
           </a>
           <div class="utamacontent">
             <h2><?=$data['judul']?></h2>
             <span class="desc"><?= $text_short?> </span>
-            <a class="btn btn-anim btn-ln" href="detail/Penerimaan-Siswa-Baru-Tahun-Ajaran-2023-2024">Read more <i class="fa fa-chevron-right reverse"></i>
+            <a class="btn btn-anim btn-ln" href="detail/<?=$url_slug?>">Read more <i class="fa fa-chevron-right reverse"></i>
             </a>
           </div>
         </div>
       </div>
     </section>
+    <?php
+    include 'koneksi.php';
+
+    $result = mysqli_query($conn, "SELECT COUNT(*) AS jumlah_data FROM tb_guru");
+    $data = mysqli_fetch_assoc($result);
+    $jumlah = $data['jumlah_data'];
+    ?>
     <section class="fouricon">
       <div class="wrapper">
         <div class="wrapicon">
-          <a href="guru.php" class="subicon btn-anim waves-effect">
+          <a href="#" class="subicon btn-anim waves-effect">
+            <span class="icon">
+              <i class="fa fa-graduation-cap"></i>
+            </span>
+            <span class="title"><?=$jumlah?></span>
+            <span class="title">Guru</span>
+          </a>
+          <?php
+          include 'koneksi.php';
+          $result = mysqli_query($conn, "SELECT COUNT(*) AS jumlah_data FROM tb_siswa");
+          $data = mysqli_fetch_assoc($result);
+          $jumlah = $data['jumlah_data'];
+          ?>
+          <a href="#" class="subicon btn-anim waves-effect">
             <span class="icon">
               <i class="fa fa-user"></i>
             </span>
-            <span class="title">20</span>
-            <span class="title">Guru</span>
-          </a>
-          <a href="siswa.php" class="subicon btn-anim waves-effect">
-            <span class="icon">
-              <i class="fa fa-soccer-ball-o"></i>
-            </span>
-            <span class="title">300</span>
+            <span class="title"><?=$jumlah?></span>
             <span class="title">Siswa</span>
           </a>
           <a href="#" class="subicon btn-anim waves-effect">
             <span class="icon">
-              <i class="fa fa-newspaper-o"></i>
+              <i class="fa fa-credit-card"></i>
             </span>
             <span class="title">49</span>
             <span class="title">PIP</span>
           </a>
-          <a href="agenda.html" class="subicon btn-anim waves-effect">
+          <a href="#" class="subicon btn-anim waves-effect">
             <span class="icon">
               <i class="fa fa-pencil-square-o"></i>
             </span>
@@ -182,12 +189,6 @@ $text_short = substr($data['artikel'], 0, 200) . "...";
       </div>
     </section>
 
-    <?php
-      include 'koneksi.php';
-      $result = mysqli_query($conn, 'SELECT * FROM tb_artikel WHERE id_artikel = (SELECT MAX(id_artikel) FROM tb_artikel);');
-      $data = mysqli_fetch_array($result);
-      $date_str = date("d/m/Y", strtotime($data['tanggal']));
-    ?>
     <section class="berita">
       <div class="wrapper">
         <div class="headingsection">
@@ -198,15 +199,26 @@ $text_short = substr($data['artikel'], 0, 200) . "...";
             <img src="user/assets/img/landing/berita.png" alt="Berita">
           </div>
           <div class="content beritapost">
+          <?php
+            include "koneksi.php";
+            $result = mysqli_query($conn, "SELECT * FROM tb_artikel WHERE id_tag=3 ORDER BY id_artikel DESC LIMIT 5");
+            ?>
+            <?php 
+            while ($data= mysqli_fetch_array($result)){  
+              $judul = $data['judul'];
+              $url_slug = slugify($judul);
+            $date_str = date("d/m/Y", strtotime($data['tanggal'])); ?>
+
+            
             <div class="wrapberita">
-              <span class="number"><?=$date_str?></span>
-              <a href="detail/<?=str_replace(" ","-",$data['judul'])?>" class="waves-effect heading btn-anim has-ripple" title=""><?=$data['judul']?></a>
+              <span class="number"><?= $date_str?></span>
+              <a href="detail/<?=$url_slug?>" class="waves-effect heading btn-anim has-ripple" title=""><?=$data['judul']?></a>
             </div>
-            <!-- <div class="wrapberita">
-              <span class="number">2</span>
-              <a href="https://www.smandakebumen.sch.id/lihat/asah-skill-kepemimpinan-smanda-gelar-latihan-dasar-kepemimpinan-20221216.html" class="waves-effect heading btn-anim" title="Asah Skill Kepemimpinan SMANDA Gelar Latihan Dasar Kepemimpinan">Asah Skill Kepemimpinan SMANDA Gelar Latihan Dasar Kepemimpinan</a>
-            </div> -->
-          </div>
+          
+
+            <?php }
+            ?>
+</div>
         </div>
       </div>
     </section>
@@ -226,18 +238,21 @@ $text_short = substr($data['artikel'], 0, 200) . "...";
           <?php
             include "koneksi.php";
             $result = mysqli_query($conn, "SELECT * FROM tb_artikel, tb_tagline WHERE tb_artikel.id_tag = tb_tagline.id_tag ORDER BY tanggal DESC LIMIT 3");
+
             ?>
             <?php 
-            while ($data= mysqli_fetch_array($result)){ ?>
+            while ($data= mysqli_fetch_array($result)){
+              $judul = $data['judul'];
+              $url_slug = slugify($judul); ?>
               <div class="grid">
               <a href="#" class="label waves-effect" title="#">
                 <i class="fa fa-user"></i> <?=$data['tagline']?> </a>
               <div class="image waves-effect">
                 <img class="" src="upload/<?=$data['gambar']?>" alt="<?=$data['judul']?>">
-                <a href="detail/<?=str_replace(" ","-",$data['judul'])?>" title="<?=$data['judul']?>"></a>
+                <a href="detail/<?=$url_slug?>" title="<?=$data['judul']?>"></a>
               </div>
               <div class="box_desc">
-                <a href="detail/<?=str_replace(" ","-",$data['judul'])?>" class="title waves-effect" title="<?=$data['judul']?>">
+                <a href="detail/<?=$url_slug?>" class="title waves-effect" title="<?=$data['judul']?>">
                   <span>
                     <h3><?=$data['judul']?></h3>
                   </span>
@@ -295,7 +310,7 @@ $text_short = substr($data['artikel'], 0, 200) . "...";
                     </div>
                     <div class="text">
                         <h3>E-Rapor SD</h3>
-                        <p>v7.3.20</p>
+                        <p>v2023</p>
                     </div>
                 </a>
                 <a href="#" class="operasi waves-effect btn-anim" target="_blank" rel="noopener noreferrer">
@@ -309,7 +324,7 @@ $text_short = substr($data['artikel'], 0, 200) . "...";
                 </a>
                 <a href="#" class="operasi waves-effect btn-anim" target="_blank" rel="noopener noreferrer">
                     <div class="image">
-                        <img src="user/assets/img/about/php.png" alt="Codeigniter" />
+                        <img src="user/assets/img/about/php.png" alt="" />
                     </div>
                     <div class="text">
                         <h3>PHP</h3>
@@ -331,13 +346,13 @@ $text_short = substr($data['artikel'], 0, 200) . "...";
               <form id='kritiksaran' action="" enctype="multipart/form-data" method="post" accept-charset="utf-8">
                 <div class="formtwo">
                   <div class="input-field">
-                    <input class="validate" id="name_form" name="nama_kritiksaran" required="" type="text">
+                    <input class="validate" id="name_form" name="" required="" type="text">
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label for="name_form">Name</label>
                   </div>
                   <div class="input-field">
-                    <input class="validate" id="email_form" name="email_kritiksaran" required="" type="email">
+                    <input class="validate" id="email_form" name="" required="" type="email">
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label for="email_form">E-mail</label>
@@ -349,7 +364,7 @@ $text_short = substr($data['artikel'], 0, 200) . "...";
                   <span class="bar"></span>
                   <label for="pesan_form">Pesan</label>
                 </div>
-                <span class="pesan">*NB anda tidak perlu login untul mengisi kritik dan saran</span>
+                <span class="pesan">*NB tidak perlu login untuk Komentar</span>
                 <div class="btn-group">
                   <button class="btn btn-ln btn-anim" type="submit" id="submit">Kirim</button>
                   <svg class="spinner" width="30px" height="30px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
@@ -360,18 +375,18 @@ $text_short = substr($data['artikel'], 0, 200) . "...";
             </div>
             <div class="content">
               <div class="heading alamat">
-                <h1>SMA Negeri 2 Kebumen</h1>
+                <h1>SDN-3 Kereng Bangkirai</h1>
                 <div class="groupdesc">
-                  <a href="https://goo.gl/maps/ztKKwwCQYfDkGT5HA">
-                    <i class="fa fa-map-marker"></i>Jln. Cincin Kota No.8, Karangsari, Kebumen 54351 </a>
-                  <a href="tel:0287-381820">
-                    <i class="fa fa-phone"></i>0287-381820 </a>
-                  <a href="mailto:smanda.kbm@gmail.com">
-                    <i class="fa fa-envelope"></i>smanda.kbm@gmail.com </a>
+                  <a href="https://goo.gl/maps/UguyXTrNLRqXpkRW9">
+                    <i class="fa fa-map-marker"></i>Jl. Panenga Raya V, Palangka Raya 73113 </a>
+                  <!-- <a href="tel:">
+                    <i class="fa fa-phone"></i>08 </a> -->
+                  <a href="mailto:sdnkerengbangkirai3@gmail.com">
+                    <i class="fa fa-envelope"></i>sdnkerengbangkirai3@gmail.com </a>
                 </div>
               </div>
               <div class="google-maps">
-                <iframe loading="lazy" title="SMA Negeri 2 Kebumen" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.2447629247017!2d109.66529131437505!3d-7.656811077883902!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7ac9f9e32e94dd%3A0xd19771a758ff5a4a!2sSMA+Negeri+2+Kebumen!5e0!3m2!1sid!2sid!4v1557541996105!5m2!1sid!2sid" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+              <iframe title="SDN-3 Kereng Bangkirai" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.6715373886705!2d113.91143231446394!3d-2.275741938146932!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de34d1b388b4575%3A0xcb58b9ad7b48dc5e!2sSDN%203%20Kereng%20Bangkirai!5e0!3m2!1sid!2sid!4v1679410731061!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
             </div>
           </div>
@@ -380,7 +395,7 @@ $text_short = substr($data['artikel'], 0, 200) . "...";
     </section>
     <div id="search_popup" class="modal">
       <h2>Cari Sesuatu...</h2>
-      <form class="search" action="search.html">
+      <form class="search" action="#">
         <input type="text" placeholder="Search" aria-label="search" name="query" />
         <button class="btn btn-anim btn-color" type="submit">
           <i class="fa fa-search"></i>

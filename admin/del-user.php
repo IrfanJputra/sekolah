@@ -9,20 +9,20 @@ if( !isset($_SESSION["level"]) ) {
 <?php 
 require '../function.php';
 
-$id = $_GET['id_artikel'];
+$id = $_GET['id_login'];
 
-if( hapus_artikel($id) > 0 ) {
+if( hapus_user($id) > 0 ) {
 	echo "
 		<script>
 			alert('data berhasil dihapus!');
-			document.location.href = 'artikel.php';
+			document.location.href = 'user.php';
 		</script>
 	";
 } else {
 	echo "
 		<script>
 			alert('data gagal dihapus!');
-			document.location.href = 'artikel.php';
+			document.location.href = 'user.php';
 		</script>
 	";
 }

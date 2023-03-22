@@ -9,20 +9,20 @@ if( !isset($_SESSION["level"]) ) {
 <?php 
 require '../function.php';
 
-$id = $_GET['id_artikel'];
+$id = $_GET['id_tag'];
 
-if( hapus_artikel($id) > 0 ) {
+if( hapus_ktg($id) > 0 ) {
 	echo "
 		<script>
 			alert('data berhasil dihapus!');
-			document.location.href = 'artikel.php';
+			document.location.href = 'kategori.php';
 		</script>
 	";
 } else {
 	echo "
 		<script>
 			alert('data gagal dihapus!');
-			document.location.href = 'artikel.php';
+			document.location.href = 'kategori.php';
 		</script>
 	";
 }

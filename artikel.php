@@ -5,7 +5,6 @@
       <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Semua Postingan</title>
-      <link rel="canonical" href="https://smandakebumen.sch.id/postingan.html" />
       <meta name="keywords" content="smanda,sman 2 kebumen,sma negeri 2 kebumen,smitc,smitc cms,sma,pelajar,kebumen,jawa tengah,indonesia">
       <meta name="description" content="SMA Negeri 2 Kebumen adalah sekolah yang terletak di Kota Kebumen, Provinsi Jawa Tengah. Website ini adalah website resmi SMA NEGERI 2 KEBUMEN">
       <meta http-equiv="expires" content="Fri, 18 Jul 2022 1:00:00 GMT">
@@ -20,15 +19,15 @@
       <meta content='website' property='og:type'>
       <link href='index.html' rel='openid.delegate'>
       <link href='index.html' rel='canonical'>
-      <meta content='https://www.smandakebumen.sch.id/' property='og:url'>
+      <meta content='#/' property='og:url'>
       <meta content='SMITC_CMS' name='generator'>
       <meta property='og:image'>
       <link href='user/assets/icon/favicon.ico' rel='icon' type='image/x-icon'>
       <link href="user//assets/icon/favicon.ico" rel="shortcut icon">
-      <link href='user/assets/icon/favicon-32x32.png' rel='icon' sizes='32x32'>
-      <link href='user/assets/icon/android-icon-192x192.png' rel='icon' sizes='192x192'>
-      <link href='user/assets/icon/apple-icon-180x180.png' rel='apple-touch-icon-precomposed'>
-      <meta content='user/assets/icon/ms-icon-144x144.png' name='msapplication-TileImage'>
+      <link href='user/assets/icon/android-icon-192x192.png' rel='icon' sizes='32x32'>
+      <link href='user/assets/icon/' rel='icon' sizes='192x192'>
+      <link href='user/assets/icon/' rel='apple-touch-icon-precomposed'>
+      <meta content='user/assets/icon/' name='msapplication-TileImage'>
       <meta content='#49952E' name='msapplication-navbutton-color'>
       <meta content='#49952E' name='apple-mobile-web-app-status-bar-style'>
       <meta content='#49952E' name='theme-color'>
@@ -37,19 +36,9 @@
       <meta content='SMITC CMS ' name='Author'>
       <meta content='general' name='rating'>
       <meta content='id' name='geo.country'>
-      <meta content='1525075227538724' property='fb:app_id'>
-      <meta content='100006157928140' property='fb:admins'>
-      <meta content='summary' name='twitter:card'>
-      <meta content='SMAN 2 Kebumen' name='twitter:title'>
-      <meta content='@officialosis2' name='twitter:site'>
-      <meta content='@officialosis2' name='twitter:creator'>
-      <meta content='summary_large_image' name='twitter:card'>
       <meta content="id_ID" property="og:locale">
       <meta content="en_US" property="og:locale:alternate">
       <meta content="en_GB" property="og:locale:alternate">
-      <link href='https://smandakebumen.sch.id' rel='dns-prefetch'>
-      <link href='https://pustaka.smandakebumen.sch.id' rel='dns-prefetch'>
-      <link href='https://smitcsmandakebumen.blogspot.com' rel='dns-prefetch'>
       <link rel="stylesheet" href="user/assets/css/pages/postingan_type.min.css" type="text/css" />
       <link type="text/css" rel="stylesheet" href="user/assets/css/font-awesome.min.css">
       <script type="text/javascript">
@@ -63,25 +52,25 @@
             <nav class="wrapper">
                <ul>
                   <li>
-                     <a href="https://goo.gl/maps/ztKKwwCQYfDkGT5HA" target="_blank" rel="noreferrer noopener" class="waves-effect">
-                        <i class="fa fa-map-marker"></i>Jln Cincin Kota No. 8, Karangsari, Kebumen 54351 </a>
+                     <a href="https://goo.gl/maps/UguyXTrNLRqXpkRW9" target="_blank" rel="noreferrer noopener" class="waves-effect">
+                        <i class="fa fa-map-marker"></i>Jl. Panenga Raya V, Palangka Raya 73113 </a>
                   </li>
+                  <!-- <li>
+                     <a href="tel:0" class="waves-effect">
+                        <i class="fa fa-phone"></i>0 </a>
+                  </li> -->
                   <li>
-                     <a href="tel:0287-381820" class="waves-effect">
-                        <i class="fa fa-phone"></i>0287-381820 </a>
-                  </li>
-                  <li>
-                     <a href="mailto:smanda.kbm@gmail.com" class="waves-effect">
-                        <i class="fa fa-envelope"></i>smanda.kbm@gmail.com </a>
+                     <a href="mailto:sdnkerengbangkirai3@gmail.com" class="waves-effect">
+                        <i class="fa fa-envelope"></i>sdnkerengbangkirai3@gmail.com </a>
                   </li>
                </ul>
             </nav>
          </div>
          <nav class="mainav" id="sticky_nav">
             <nav class="wrapper">
-               <a href="https://www.smandakebumen.sch.id/" class="logo waves-effect">
-                  <img src="https://www.smandakebumen.sch.id/assets/img/logo/smanda.png" alt="SMA Negeri 2 Kebumen">
-                  <span>SMA Negeri 2 Kebumen</span>
+               <a href="/" class="logo waves-effect">
+                  <img src="user/assets/img/logo/logo.gif" alt="SD Negeri 3 Kereng Bangkirai">
+                  <span>SD Negeri 3 Kereng Bangkirai</span>
                </a>
                <div class="menu">
                   <div class="menu-toggle" id="mobile-menu">
@@ -95,15 +84,15 @@
                            <i class="fa fa-home mr-2"></i>Beranda </a>
                      </li>
                      <li>
-                        <a class="waves-effect " href="https://www.smandakebumen.sch.id/lihat/Visi-dan-Misi-SMA-Negeri-2-Kebumen-29112019.html">
+                        <a class="waves-effect " href="detail/Visi-Dan-Misi">
                            <i class="fa fa-star mr-2"></i>Visi dan Misi </a>
                      </li>
                      <li>
-                        <a class="waves-effect " href="https://www.smandakebumen.sch.id/author">
+                        <a class="waves-effect " href="profil.php">
                            <i class="fa fa-user mr-2"></i>Profil </a>
                      </li>
                      <li>
-                        <a class="waves-effect " href="https://www.smandakebumen.sch.id/postingan">
+                        <a class="waves-effect " href="#">
                            <i class="fa fa-files-o mr-2"></i>Postingan </a>
                      </li>
                      <li>
@@ -112,7 +101,7 @@
                         </a>
                      </li>
                      <li id="login">
-                        <a href="https://www.smandakebumen.sch.id/login" class="waves-effect btn btn-anim btn-color">Login</a>
+                        <a href="login.php" class="waves-effect btn btn-anim btn-color">Login</a>
                      </li>
                   </ul>
                </div>
@@ -129,23 +118,27 @@
                   <div class="post">
                   <?php
             include "koneksi.php";
+                  include 'function.php';
                         // Variabel untuk pagination
             $page = isset($_GET['page']) ? $_GET['page'] : 1;
             $limit = 4; // Jumlah data per halaman
             $start = ($page - 1) * $limit; // Mulai dari data ke-berapa
             $result = mysqli_query($conn, "SELECT * FROM tb_artikel, tb_tagline WHERE tb_artikel.id_tag = tb_tagline.id_tag ORDER BY tanggal DESC LIMIT $start, $limit");
+
             ?>
             <?php 
-            while ($data= mysqli_fetch_array($result)){ ?>
+            while ($data= mysqli_fetch_array($result)){ 
+               $judul = $data['judul'];
+               $url_slug = slugify($judul);?>
               <div class="grid">
               <a href="#" class="label waves-effect" title="#">
                 <i class="fa fa-user"></i> <?=$data['tagline']?> </a>
               <div class="image waves-effect">
                 <img class="" src="upload/<?=$data['gambar']?>" alt="<?=$data['judul']?>">
-                <a href="detail/<?=str_replace(" ","-",$data['judul'])?>" title="<?=$data['judul']?>"></a>
+                <a href="detail/<?=$url_slug?>" title="<?=$data['judul']?>"></a>
               </div>
               <div class="box_desc">
-                <a href="detail/<?=str_replace(" ","-",$data['judul'])?>" class="title waves-effect" title="<?=$data['judul']?>">
+                <a href="detail/<?=$url_slug?>" class="title waves-effect" title="<?=$data['judul']?>">
                   <span>
                     <h3><?=$data['judul']?></h3>
                   </span>
@@ -220,85 +213,57 @@
                   </div>
                </div>
             </main>
+
+            <?php
+           
+            $result = mysqli_query($conn, "SELECT * FROM tb_tagline");
+            
+            ?>
             <aside>
-               <div class="sidebar nowrap">
+            <div class="sidebar nowrap">
                   <div class="labelwrap post_type">
-                     <a href="https://www.smandakebumen.sch.id/berita" class="label btn-anim btn waves-effect">
+
+                  <?php 
+            while ($data= mysqli_fetch_array($result)){ ?>
+               
+               <a href="#" class="label btn-anim btn waves-effect">
                         <span class="text">
-                           <i class="fa fa-newspaper-o"></i> Berita </span>
+                           <i class="fa fa-tag"></i><?=$data['tagline']?> </span>
                      </a>
-                     <a href="https://www.smandakebumen.sch.id/juara" class="label btn-anim btn waves-effect">
-                        <span class="text">
-                           <i class="fa fa-trophy"></i> Kejuaraan </span>
-                     </a>
-                     <a href="https://www.smandakebumen.sch.id/ekstra" class="label btn-anim btn waves-effect">
-                        <span class="text">
-                           <i class="fa fa-trophy"></i> Ekstrakurikuler </span>
-                     </a>
-                     <a href="https://www.smandakebumen.sch.id/alumni" class="label btn-anim btn waves-effect">
-                        <span class="text">
-                           <i class="fa fa-users"></i> Alumni </span>
-                     </a>
-                     <a href="https://www.smandakebumen.sch.id/mpls" class="label btn-anim btn waves-effect">
-                        <span class="text">
-                           <i class="fa fa-globe"></i> MPLS </span>
-                     </a>
+            <?php }
+            ?>
+
+
                   </div>
                </div>
-               <div class="sidebar nowrap">
-                  <h2>Semua Label</h2>
-                  <div class="labelwrap counter" id="label_id">
-                     <a href="https://www.smandakebumen.sch.id/tagar/smanda" class="label btn-anim btn waves-effect">
-                        <span class="counter">201</span>
-                        <span class="text">smanda</span>
-                     </a>
-                     <a href="https://www.smandakebumen.sch.id/tagar/MPLS" class="label btn-anim btn waves-effect">
-                        <span class="counter">31</span>
-                        <span class="text">MPLS</span>
-                     </a>
-                     <a href="https://www.smandakebumen.sch.id/tagar/COVID-19" class="label btn-anim btn waves-effect">
-                        <span class="counter">25</span>
-                        <span class="text">COVID-19</span>
-                     </a>
-                     <a href="https://www.smandakebumen.sch.id/tagar/PPDB" class="label btn-anim btn waves-effect">
-                        <span class="counter">22</span>
-                        <span class="text">PPDB</span>
-                     </a>
-                     <a href="https://www.smandakebumen.sch.id/tagar/Lawan_Corona" class="label btn-anim btn waves-effect">
-                        <span class="counter">16</span>
-                        <span class="text">Lawan_Corona</span>
-                     </a>
-                     <a href="https://www.smandakebumen.sch.id/tagar/KBM" class="label btn-anim btn waves-effect">
-                        <span class="counter">12</span>
-                        <span class="text">KBM</span>
-                     </a>
-                     <a href="https://www.smandakebumen.sch.id/tagar/Seleksi_P3K" class="label btn-anim btn waves-effect">
-                        <span class="counter">8</span>
-                        <span class="text">Seleksi_P3K</span>
-                     </a>
-                  </div>
-               </div>
+
+               <?php
+            
+            $result = mysqli_query($conn, "SELECT * FROM tb_artikel LIMIT 5");
+            $no=1;
+            ?>
                <div class="sidebar nowrap">
                   <h2 id="rand_agen">Postingan Random</h2>
                   <div class="wrappost styletiga" id="random_id">
-                     <div class="wraptiga">
-                        <span class="number">1</span>
-                        <a href="https://www.smandakebumen.sch.id/lihat/study-and-refreshing-random-smanda-20200311.html" title="Lihat Study and Refreshing RANDOM SMANDA?" class="waves-effect heading btn-anim">Study and Refreshing RANDOM SMANDA</a>
+                  <?php 
+                  while ($data= mysqli_fetch_assoc($result)){ 
+                     $judul = $data['judul'];
+                     $url_slug = slugify($judul);?>
+               
+               <div class="wraptiga">
+                        <span class="number"><?=$no++?></span>
+                        <a href="detail/<?=$url_slug?>" title="detail/<?=str_replace(" ","-",$data['judul'])?>" class="waves-effect heading btn-anim"><?=$data['judul']?></a>
                      </div>
-                     <div class="wraptiga">
-                        <span class="number">2</span>
-                        <a href="https://www.smandakebumen.sch.id/lihat/materi-kurikulum-2013-dan-sistem-kredit-semester-20210713.html" title="Lihat Materi Kurikulum 2013 dan Sistem Kredit Semester?" class="waves-effect heading btn-anim">Materi Kurikulum 2013 dan Sistem Kredit Semester</a>
-                     </div>
-                     <div class="wraptiga">
-                        <span class="number">3</span>
-                        <a href="https://www.smandakebumen.sch.id/lihat/siswi-inklusi-smanda-raih-juara-2-lomba-digital-art-20221220.html" title="Lihat Siswi Inklusi SMANDA Raih Juara 2 Lomba Digital Art?" class="waves-effect heading btn-anim">Siswi Inklusi SMANDA Raih Juara 2 Lomba Digital Art</a>
-                     </div>
-                     <div class="wraptiga">
-                        <span class="number">4</span>
-                        <a href="https://www.smandakebumen.sch.id/lihat/revisi-pengumuman-ppdb-2020-2021-20200610.html" title="Lihat Revisi Pengumuman (PPDB) SMA Negeri 2 Kebumen Tahun Pelajaran 2020/2021?" class="waves-effect heading btn-anim">Revisi Pengumuman (PPDB) SMA Negeri 2 Kebumen Tahun…</a>
-                     </div>
+            <?php }
+            ?>
+
+ 
                   </div>
                </div>
+
+
+
+
             </aside>
          </div>
       </section>
@@ -314,19 +279,19 @@
             <span class="fab_dots dots_3"></span>
          </label>
          <div class="fab_target">
-            <a href="https://www.smandakebumen.sch.id/about" class="fab_action action_1 waves-effect btn-anim" title="Tentang Developer">
+            <a href="#/about" class="fab_action action_1 waves-effect btn-anim" title="Tentang Developer">
                <i class="fa fa-info"></i>
             </a>
             <a href="javascript:void(0)" class="fab_action action_2 waves-effect btn-anim" id="fullscreen" title="Fullscreen?">
                <i class="fa fa-arrows-alt"></i>
             </a>
-            <a href="https://www.smandakebumen.sch.id/" class="fab_action action_3 waves-effect btn-anim" title="Utama">
+            <a href="#/" class="fab_action action_3 waves-effect btn-anim" title="Utama">
                <i class="fa fa-home"></i>
             </a>
             <a href="javascript:void(0)" class="fab_action action_4 waves-effect btn-anim" id="darkmode" title="Ubah Tema">
                <i class="fa fa-lightbulb-o"></i>
             </a>
-            <a href="https://www.smandakebumen.sch.id/" class="fab_action action_5 waves-effect btn-anim" title="Kontak">
+            <a href="#/" class="fab_action action_5 waves-effect btn-anim" title="Kontak">
                <i class="fa fa-address-card"></i>
             </a>
          </div>

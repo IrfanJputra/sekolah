@@ -44,12 +44,12 @@ include 'v_sidebar.php';
       <div class="container-fluid">
         <div class="row mb-2">
           <div class="col-sm-6">
-            <h1>Artikel</h1>
+            <h1>Kategori</h1>
           </div>
           <div class="col-sm-6">
             <ol class="breadcrumb float-sm-right">
               <li class="breadcrumb-item"><a href="#">Home</a></li>
-              <li class="breadcrumb-item active">Artikel</li>
+              <li class="breadcrumb-item active">Kategori</li>
             </ol>
           </div>
         </div>
@@ -72,18 +72,18 @@ include 'v_sidebar.php';
 if( isset($_POST["submit"]) ) {
 	
 	// cek apakah data berhasil di tambahkan atau tidak
-	if( tambah_artikel($_POST) > 0 ) {
+	if( tambah_ktg($_POST) > 0 ) {
 		echo "
 			<script>
 				alert('data berhasil ditambahkan!');
-				document.location.href = 'artikel.php';
+				document.location.href = 'kategori.php';
 			</script>
 		";
 	} else {
     echo "
     <script>
       alert('data gagal ditambahkan!');
-      document.location.href = 'artikel.php';
+      document.location.href = 'kategori.php';
     </script>
   ";
 	}
@@ -97,7 +97,7 @@ if( isset($_POST["submit"]) ) {
         <div class="modal-dialog modal-lg">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Tambah Artikel</h4>
+              <h4 class="modal-title">Tambah Kategori</h4>
               <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
               </button>
@@ -105,42 +105,9 @@ if( isset($_POST["submit"]) ) {
             <div class="modal-body">
             <form action="" method="post" enctype="multipart/form-data">
             <div class="mb-3">
-                              <label><strong>Judul</strong></label>
-                                <input type="text" name="judul" class="form-control">
+                              <label><strong>Kategori</strong></label>
+                                <input type="text" name="tagline" class="form-control">
                             </div>
-                            <div class="mb-1">
-                                <label><strong>Artikel</strong></label>
-                                <textarea id="mytextarea" name='artikel' class="form-control"></textarea><br>
-                            </div>
-
-                            <div class="mb-3" >
-                            <label for="mutasi">Tag</label>
-                            <select  name="tagline" class="form-control" value="tagline" >
-                            <option disabled selected> Pilih </option>
-                            <?php 
-                            include '../koneksi.php';
-                            $data = mysqli_query($conn, "SELECT * FROM tb_tagline WHERE id_tag;");
-                            while($baris= mysqli_fetch_array($data)){
-                            ?>
-                                <option value="<?php echo $baris['id_tag']; ?>"><?php echo $baris['tagline']; ?></option> 
-
-                            <?php
-                            }
-                                ?>
-                            </select>
-                            </div>
-                            <div class="form-group">
-                            <label for="foto">Foto</label>
-                            <div class="input-group">
-                            <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="gambar" name="gambar">
-                            <label class="custom-file-label" for="gambar">Pilih Gambar</label>
-                            <input type="hidden" name="tanggal" value="<?php echo date("Y-m-d"); ?>">
-                            
-                            </div>
-                            </div>
-                            </div>
-
                 <div class="modal-footer justify-content-between">
                 <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
                 <button type="submit" name="submit" class="btn btn-primary">Tambah</button>
@@ -162,10 +129,7 @@ if( isset($_POST["submit"]) ) {
                 <thead>
                   <tr>
                     <th> No</th>
-                    <th>Judul</th>
-                    <th>Deskripsi</th>
-                    <th>Tag</th>
-                    <th>Gambar</th>
+                    <th>Kategori</th>
                     <th>Aksi</th>
                   </tr>
               </thead>
@@ -173,23 +137,18 @@ if( isset($_POST["submit"]) ) {
                   <?php 
        include '../koneksi.php';
        $no =1;
-       $data = mysqli_query($conn, "SELECT * FROM tb_artikel, tb_tagline WHERE tb_artikel.id_tag = tb_tagline.id_tag");
+       $data = mysqli_query($conn, "SELECT * FROM tb_tagline ORDER BY id_tag DESC");
       
        while($baris= mysqli_fetch_assoc($data)){
-        $text_short = substr($baris['artikel'], 0, 100) . "...";
+        
            ?>
            <tr>
                
                <td><?php echo $no++; ?></td>
-               <td><?php echo $baris['judul']; ?></td>
-               <td><?php echo $text_short ?></td>
-               <td><?php echo $baris['tagline']; ?></td>
-               <td><a href="upload/<?php echo $baris['gambar']; ?>" target="_blank"><img src="../upload/<?php echo $baris['gambar']; ?>" width="50"> </a></td>
-   
-      
-                   <td>
-               <a href="edit-artikel.php?id_artikel=<?php echo $baris['id_artikel'];?>" class="btn btn-primary">Edit</a>                    
-               <a href="del-artikel.php?id_artikel=<?= $baris['id_artikel'];?>" class="btn btn-danger" onclick="return confirm('Yakin?');">Hapus</a>                    
+               <td><?php echo $baris['tagline']; ?></td>   
+               <td>
+               <!-- <a href="edit-ktg.php?id_tag=<?php echo $baris['id_tag'];?>" class="btn btn-primary">Edit</a>                     -->
+               <a href="del-ktg.php?id_tag=<?= $baris['id_tag'];?>" class="btn btn-danger" onclick="return confirm('Yakin?');">Hapus</a>                    
  
        </td>
        </tr>

@@ -6,7 +6,6 @@ if( !isset($_SESSION["level"]) ) {
 	exit;
 }
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -58,30 +57,24 @@ if( !isset($_SESSION["level"]) ) {
     <section class="content">
     <?php
 
-$id = $_GET["id_artikel"];
-
+$id = $_GET["id_tag"];
 //query data siswa berdasarkan id
-$sqlGet = "SELECT * FROM tb_artikel, tb_tagline WHERE tb_artikel.id_tag=tb_tagline.id_tag and id_artikel = '$id'";
+$sqlGet = "SELECT * FROM tb_tagline WHERE id_tag= '$id'";
 $queryGet = mysqli_query($conn, $sqlGet);
 $baris = mysqli_fetch_array($queryGet);
 // cek apakah tombol submit sudah ditekan atau belum
 if( isset($_POST["submit"]) ) {
 	
 	// cek apakah data berhasil di tambahkan atau tidak
-	if( ubah_artikel($_POST) > 0 ) {
+	if(ubah_ktg($_POST) > 0 ) {
 		echo "
 			<script>
 				alert('Berhasil Disimpan!');
-				document.location.href = 'artikel.php';
+				document.location.href = 'kategori.php';
 			</script>
 		";
 	} else {
-		echo "
-			<script>
-				alert('Gagal Disimpan!');
-				document.location.href = 'artikel.php';
-			</script>
-		";
+var_dump($_POST);
 	}
 
 
@@ -94,42 +87,9 @@ if( isset($_POST["submit"]) ) {
                 <div class="card">
                     <div class="card-body">
                         <form method='post' action='' enctype="multipart/form-data">
-                        <input type="hidden" name="gambarLama" value="<?php echo $baris['gambar']; ?>">
                             <div class="mb-3">
-                                <label><strong>Judul</strong></label>
-                                <input type="text" name="judul" class="form-control" value="<?= $baris['judul'];?>" >
-                            </div>
-                            <div class="mb-1">
-                                <label><strong>Artikel</strong></label>
-                                <textarea id="mytextarea"  name='artikel' class="form-control"><?= $baris['artikel']; ?></textarea><br>
-                            </div>
-
-                            <div class="mb-3" >
-                            <label for="mutasi">Tag</label>
-                            <select  name="id_tag" class="form-control" value="id_tag" >
-                            <option disabled selected> Pilih </option>
-                            <?php 
-                            include '../koneksi.php';
-                            $query = mysqli_query($conn, "SELECT * FROM tb_tagline");
-                            while($baris= mysqli_fetch_array($query)){
-                            ?>
-                                <option value="<?php echo $baris['id_tag']; ?>"<?= ($baris['id_tag'] == 1) ? 'selected' : '' ?> ><?php echo $baris['tagline']; ?></option> 
-
-                            <?php
-                            }
-                                ?>
-                            </select>
-                            </div>
-                            <div class="form-group">
-                            <label for="foto">Foto</label>
-                            <div class="input-group">
-                            <div class="custom-file">
-                            <input type="file" class="custom-file-input" id="gambar" name="gambar">
-                            <label class="custom-file-label" for="gambar">Pilih Gambar</label>
-                            
-                            </div>
-                            </div>
-                            <p style="color: red;">  *Abaikan Jika Tidak ada perubahan gambar</p>
+                                <label><strong>Kategori</strong></label>
+                                <input type="text" name="tagline" class="form-control" value="<?= $baris['tagline'];?>" >
                             </div>
                             <div class="d-flex justify-content-center">
                                 <input type="submit" name="submit" value="Submit" class="btn btn-success">

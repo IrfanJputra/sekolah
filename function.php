@@ -206,6 +206,20 @@ function tambah_artikel($data){
 	return mysqli_affected_rows($conn);
 }
 
+//tambah ktg
+function tambah_ktg($data){
+
+	global $conn;
+	$tagline             	= htmlspecialchars($data["tagline"]);
+
+	$query = "INSERT INTO tb_tagline
+					VALUES (NULL,'$tagline')";
+   mysqli_query($conn, $query);
+
+	return mysqli_affected_rows($conn);
+}
+
+
 //ubah guru
 	function ubah($data) {
 		global $conn;
@@ -319,6 +333,22 @@ function tambah_artikel($data){
 			return mysqli_affected_rows($conn);	
 		}		
 
+		//ubah kategori
+		function ubah_ktg($data) {
+			global $conn;
+			$id 					= $_GET['id_tag'];
+			$tagline       			= htmlspecialchars($data["tagline"]);
+			
+			$query = "UPDATE tb_tagline SET
+						tagline	= '$tagline',
+						WHERE id_tag = $id
+					";
+		
+			mysqli_query($conn, $query);
+		
+			return mysqli_affected_rows($conn);	
+		}
+
 //hapus guru
 	function hapus($data) {
 		global $conn;
@@ -341,5 +371,27 @@ function tambah_artikel($data){
 			mysqli_query($conn, "DELETE FROM tb_artikel WHERE id_artikel = $id");
 			return mysqli_affected_rows($conn);
 		}
-	
+
+				//hapus ktg
+				function hapus_ktg($id) {
+					global $conn;
+					mysqli_query($conn, "DELETE FROM tb_tagline WHERE id_tag = $id");
+					return mysqli_affected_rows($conn);
+				}
+
+					//hapus user
+					function hapus_user($id) {
+						global $conn;
+						mysqli_query($conn, "DELETE FROM tb_login WHERE id_login = $id");
+						return mysqli_affected_rows($conn);
+					}
+					//slug text
+					function slugify($text) {
+						$text = strtolower($text); // ubah ke lowercase
+						$text = preg_replace('/[^a-z0-9]+/', '-', $text); // replace non-alphanumeric with dash
+						$text = trim($text, '-'); // remove trailing dash
+						return $text;
+					  }
+
+
 ?>
