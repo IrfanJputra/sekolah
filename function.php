@@ -187,6 +187,7 @@ function tambah_artikel($data){
 	$judul              	= htmlspecialchars($data["judul"]);
 	$artikel       			 = htmlspecialchars($data["artikel"]);
 	$tagline              = htmlspecialchars($data["tagline"]);
+	$slug              		= slug($judul);
 	$tanggal    			= date("Y-m-d H:i:s");
 
 
@@ -196,9 +197,10 @@ function tambah_artikel($data){
 	return false;
 	}
 
+
 	
 	$query = "INSERT INTO tb_artikel
-					VALUES (NULL,'$tagline', '$judul', '$artikel','$gambar','$tanggal')";
+					VALUES (NULL,'$tagline', '$judul', '$artikel','$gambar','$slug','$tanggal')";
    
    
    mysqli_query($conn, $query);
@@ -223,7 +225,7 @@ function tambah_ktg($data){
 //ubah guru
 	function ubah($data) {
 		global $conn;
-		
+		$id 		= $_GET['id_guru'];
 		$nama = htmlspecialchars($data["nama"]);
 		$nip = htmlspecialchars($data["nip"]);
 		$jabatan = htmlspecialchars($data["jabatan"]);
@@ -243,6 +245,7 @@ function tambah_ktg($data){
 					jabatan = '$jabatan',
 					alamat = '$alamat',
 					gambar = '$gambar'
+					WHERE id_guru = $id
 				";
 	
 		mysqli_query($conn, $query);
@@ -385,12 +388,27 @@ function tambah_ktg($data){
 						mysqli_query($conn, "DELETE FROM tb_login WHERE id_login = $id");
 						return mysqli_affected_rows($conn);
 					}
-					//slug text
-					function slugify($text) {
-						$text = strtolower($text); // ubah ke lowercase
-						$text = preg_replace('/[^a-z0-9]+/', '-', $text); // replace non-alphanumeric with dash
-						$text = trim($text, '-'); // remove trailing dash
-						return $text;
+
+					
+					// //slug text
+					// function slugify($text) {
+					// 	$text = strtolower($text); // ubah ke lowercase
+					// 	$text = preg_replace('/[^a-z0-9]+/', '-', $text); // replace non-alphanumeric with dash
+					// 	$text = trim($text, '-'); // remove trailing dash
+					// 	return $text;
+					//   }
+
+
+					  function slug($judul){
+								// menyimpan post judul dengan variable
+							//kita buat post slug dan mengganti spasi dengan tanda hubung(-) 
+							$slug2 = preg_replace('/[^a-zA-Z0-9]+/', '-', $judul); 
+							// mengubah huruf besar ke kecil
+							$slug1= strtolower($slug2);
+							// menghapus semua karakter unik dijudul
+							$slug = preg_replace("/[^a-zA-Z0-9 -]/","",$slug1);
+							// menyimpan post ke database ditabel berita
+							return $slug;
 					  }
 
 

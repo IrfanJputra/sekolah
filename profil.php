@@ -135,7 +135,7 @@ while ($data= mysqli_fetch_array($result)){ ?>
                <h2><?=$data['nama']?></h2>
                <h4>NIP.<?=$data['nip']?></h4>
                <span class="quotes"> <?=$data['jabatan']?>  </span>
-               <a href="author/Iqbal0105.html" class="btn btn-anim" rel="noopener noreferrer">More <i class="fa fa-chevron-right reverse"></i>
+               <a href="#" class="btn btn-anim" rel="noopener noreferrer">More <i class="fa fa-chevron-right reverse"></i>
                </a>
             </div>
          </div>

@@ -5,8 +5,8 @@
       <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title>Semua Postingan</title>
-      <meta name="keywords" content="smanda,sman 2 kebumen,sma negeri 2 kebumen,smitc,smitc cms,sma,pelajar,kebumen,jawa tengah,indonesia">
-      <meta name="description" content="SMA Negeri 2 Kebumen adalah sekolah yang terletak di Kota Kebumen, Provinsi Jawa Tengah. Website ini adalah website resmi SMA NEGERI 2 KEBUMEN">
+      <meta name="keywords" content="">
+      <meta name="description" content="">
       <meta http-equiv="expires" content="Fri, 18 Jul 2022 1:00:00 GMT">
       <meta http-equiv="page-enter" content="revealtrans(duration=seconds,transition=num)">
       <meta http-equiv="page-exit" content="revealtrans(duration=seconds,transition=num)">
@@ -14,8 +14,8 @@
 								<script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); 
 								</script>
 								<![endif]-->
-      <meta content='SMA Negeri 2 Kebumen' property='og:site_name'>
-      <meta content='SMA Negeri 2 Kebumen' property='og:title'>
+      <meta content='' property='og:site_name'>
+      <meta content='' property='og:title'>
       <meta content='website' property='og:type'>
       <link href='index.html' rel='openid.delegate'>
       <link href='index.html' rel='canonical'>
@@ -127,18 +127,16 @@
 
             ?>
             <?php 
-            while ($data= mysqli_fetch_array($result)){ 
-               $judul = $data['judul'];
-               $url_slug = slugify($judul);?>
+            while ($data= mysqli_fetch_array($result)){ ?>
               <div class="grid">
               <a href="#" class="label waves-effect" title="#">
                 <i class="fa fa-user"></i> <?=$data['tagline']?> </a>
               <div class="image waves-effect">
                 <img class="" src="upload/<?=$data['gambar']?>" alt="<?=$data['judul']?>">
-                <a href="detail/<?=$url_slug?>" title="<?=$data['judul']?>"></a>
+                <a href="detail/<?=$data['slug']?>" title="<?=$data['judul']?>"></a>
               </div>
               <div class="box_desc">
-                <a href="detail/<?=$url_slug?>" class="title waves-effect" title="<?=$data['judul']?>">
+                <a href="detail/<?=$data['slug']?>" class="title waves-effect" title="<?=$data['judul']?>">
                   <span>
                     <h3><?=$data['judul']?></h3>
                   </span>
@@ -246,13 +244,11 @@
                   <h2 id="rand_agen">Postingan Random</h2>
                   <div class="wrappost styletiga" id="random_id">
                   <?php 
-                  while ($data= mysqli_fetch_assoc($result)){ 
-                     $judul = $data['judul'];
-                     $url_slug = slugify($judul);?>
+                  while ($data= mysqli_fetch_assoc($result)){ ?>
                
                <div class="wraptiga">
                         <span class="number"><?=$no++?></span>
-                        <a href="detail/<?=$url_slug?>" title="detail/<?=str_replace(" ","-",$data['judul'])?>" class="waves-effect heading btn-anim"><?=$data['judul']?></a>
+                        <a href="detail/<?=$data['slug']?>" title="detail/<?=$data['judul']?>" class="waves-effect heading btn-anim"><?=$data['judul']?></a>
                      </div>
             <?php }
             ?>

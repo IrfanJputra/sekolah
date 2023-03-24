@@ -176,87 +176,11 @@ if( isset($_POST["submit"]) ) {
                 <td><?php echo $baris['alamat']; ?></td>
                 <td><a href="upload/<?php echo $baris['gambar']; ?>" target="_blank"><img src="../upload/<?php echo $baris['gambar']; ?>" width="50"> </a></td>
                 <td>
-                <a href="" class="btn btn-primary" data-toggle="modal" data-target="#modalEdit<?= $no ?>">Edit</a>                    
+                <a href="edit-guru.php?id_guru=<?=$baris['id_guru']?>" class="btn btn-primary">Edit</a>                    
                 <a href="" class="btn btn-danger" data-toggle="modal" data-target="#modal-default<?= $no ?>">Hapus</a>                    
   
               </td>
                 </tr>
-      
-
-                <?php
-                    // cek apakah tombol submit sudah ditekan atau belum
-                    if( isset($_POST["ubah"]) ) {
-                      
-                      // cek apakah data berhasil diubah atau tidak
-                      if( ubah($_POST) > 0 ) {
-                        echo "
-                          <script>
-                            alert('data berhasil diubah!');
-                            document.location.href = 'guru.php';
-                          </script>
-                        ";
-                      } else {
-                        echo "
-                          <script>
-                            alert('data gagal diubah!');
-                            document.location.href = 'guru.php';
-                          </script>
-                        ";
-                      }
-                    }
-                    ?>
-
-                      
-                <!-- /.Modal edit data-->
-     <div class="modal fade" id="modalEdit<?= $no ?>">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title">Edit Guru</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-
-            
-            <div class="modal-body">
-            <form action="" method="post" enctype="multipart/form-data">
-                <div class="card-body">
-                <input type="hidden" name="gambarLama" value="<?php echo $baris['gambar']; ?>">
-                <div class="form-group">
-                <label for="nama">Nama</label>
-                <input type="text" class="form-control" name="nama" value="<?= $baris ['nama']; ?>" placeholder="Nama" required>
-                </div>
-                <div class="form-group">
-                <label for="nip">Nip</label>
-                <input type="text" class="form-control"  name="nip" value="<?= $baris ['nip']; ?>" placeholder="Nip" required>
-                </div>
-                <div class="form-group">
-                <label for="jabatan">Jabatan</label>
-                <input type="text" class="form-control"  name="jabatan" value="<?= $baris ['jabatan']; ?>" placeholder="Jabatan" required>
-                </div>
-                <div class="form-group">
-                <label for="alamat">Alamat</label>
-                <input type="text" class="form-control"  name="alamat" value="<?= $baris ['alamat']; ?>" placeholder="alamat">
-                </div>
-                <div class="form-group">
-                <label for="foto">Foto</label>
-                <div class="input-group">
-                <div class="custom-file">
-                <input type="file" class="custom-file-input" id="gambar" name="gambar">
-                <label class="custom-file-label" for="gambar">Choose file</label>
-                
-                </div>
-                </div>
-                <p style="color: red;">  *Abaikan Jika Tidak ada perubahan gambar</p>
-                </div>
-                
-                 </div>
-              </div>
-              <div class="modal-footer justify-content-between">
-                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                <button type="submit" class="btn btn-primary" name="ubah" >Simpan</button>
-              </div>
             </form>
             </div>
           <!-- /.modal-content -->

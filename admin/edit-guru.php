@@ -58,28 +58,28 @@ if( !isset($_SESSION["level"]) ) {
     <section class="content">
     <?php
 
-$id = $_GET["id_artikel"];
+$id = $_GET["id_guru"];
 
 //query data siswa berdasarkan id
-$sqlGet = "SELECT * FROM tb_artikel, tb_tagline WHERE tb_artikel.id_tag=tb_tagline.id_tag and id_artikel = '$id'";
+$sqlGet = "SELECT * FROM tb_guru WHERE id_guru = '$id'";
 $queryGet = mysqli_query($conn, $sqlGet);
 $baris = mysqli_fetch_array($queryGet);
 // cek apakah tombol submit sudah ditekan atau belum
 if( isset($_POST["submit"]) ) {
 	
 	// cek apakah data berhasil di tambahkan atau tidak
-	if( ubah_artikel($_POST) > 0 ) {
+	if( ubah($_POST) > 0 ) {
 		echo "
 			<script>
 				alert('Berhasil Disimpan!');
-				document.location.href = 'artikel.php';
+				document.location.href = 'guru.php';
 			</script>
 		";
 	} else {
 		echo "
 			<script>
 				alert('Gagal Disimpan!');
-				document.location.href = 'artikel.php';
+				document.location.href = 'guru.php';
 			</script>
 		";
 	}
@@ -93,32 +93,24 @@ if( isset($_POST["submit"]) ) {
             <div class="col-md-12">
                 <div class="card">
                     <div class="card-body">
+
                         <form method='post' action='' enctype="multipart/form-data">
                         <input type="hidden" name="gambarLama" value="<?php echo $baris['gambar']; ?>">
                             <div class="mb-3">
-                                <label><strong>Judul</strong></label>
-                                <input type="text" name="judul" class="form-control" value="<?= $baris['judul'];?>" >
+                                <label><strong>Nama</strong></label>
+                                <input type="text" name="nama" class="form-control" value="<?= $baris['nama'];?>" >
                             </div>
-                            <div class="mb-1">
-                                <label><strong>Artikel</strong></label>
-                                <textarea id=""  name='artikel' class="form-control" style="height: 115px;"><?= $baris['artikel'];?></textarea><br>
+                            <div class="mb-3">
+                                <label><strong>NIP</strong></label>
+                                <input type="text" name="nip" class="form-control" value="<?= $baris['nip'];?>" >
                             </div>
-
-                            <div class="mb-3" >
-                            <label for="mutasi">Tag</label>
-                            <select  name="id_tag" class="form-control" value="id_tag" >
-                            <option disabled selected> Pilih </option>
-                            <?php 
-                            include '../koneksi.php';
-                            $query = mysqli_query($conn, "SELECT * FROM tb_tagline");
-                            while($baris= mysqli_fetch_array($query)){
-                            ?>
-                                <option value="<?php echo $baris['id_tag']; ?>"<?= ($baris['id_tag'] == 1) ? 'selected' : '' ?> ><?php echo $baris['tagline']; ?></option> 
-
-                            <?php
-                            }
-                                ?>
-                            </select>
+                            <div class="mb-3">
+                                <label><strong>Jabatan</strong></label>
+                                <input type="text" name="jabatan" class="form-control" value="<?= $baris['jabatan'];?>" >
+                            </div>
+                            <div class="mb-3">
+                                <label><strong>Alamat</strong></label>
+                                <input type="text" name="alamat" class="form-control" value="<?= $baris['alamat'];?>" >
                             </div>
                             <div class="form-group">
                             <label for="foto">Foto</label>
@@ -135,6 +127,7 @@ if( isset($_POST["submit"]) ) {
                                 <input type="submit" name="submit" value="Submit" class="btn btn-success">
                             </div>
                         </form>
+
                     </div>
                 </div>
             </div>
@@ -168,7 +161,7 @@ if( isset($_POST["submit"]) ) {
 <!-- AdminLTE App -->
 <script src="../assets/js/adminlte.min.js"></script>
 
-    <!-- Script
+    <!-- Script -->
     <script>
         tinymce.init({
             forced_root_block : false,
@@ -182,6 +175,6 @@ if( isset($_POST["submit"]) ) {
             'alignleft aligncenter alignright alignjustify | ' +
             'bullist numlist checklist outdent indent | removeformat | a11ycheck code table help'
         });
-    </script> -->
+    </script>
 </body>
 </html>

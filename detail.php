@@ -1,14 +1,27 @@
 <?php
  include "koneksi.php";
  include 'function.php';
-    $id = $_GET['id_artikel'];
+    $slug = $_GET['id'];
     $judul = str_replace("-"," ",$id);
     $judul = ucwords($judul);
        
    
     
-        $result = mysqli_query($conn, "SELECT * FROM tb_artikel WHERE judul ='$judul'");
+        $result = mysqli_query($conn, "SELECT * FROM tb_artikel WHERE slug ='$slug'");
         $data = mysqli_fetch_array($result);
+         // ambil data
+         $input = $data['artikel'];
+         // memecah string input berdasarkan karakter '\r\n\r\n'
+         $pecah = explode("\r\n\r\n", $input);
+         
+         // string kosong inisialisasi
+         $text = "";
+         for ($i=0; $i<=count($pecah)-1; $i++)
+         {
+            $part = str_replace($pecah[$i], "<br>".$pecah[$i]."</br>", $pecah[$i]);
+            $text .= $part;
+         }
+
 
 
 
@@ -31,8 +44,8 @@ if(($data['id_artikel']) == 0) {
       <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge">
       <title><?=$judul?></title>
-      <meta name="keywords" content="smanda,sman 2 kebumen,sma negeri 2 kebumen,smitc,smitc cms,sma,pelajar,kebumen,jawa tengah,indonesia">
-      <meta name="description" content="SMA Negeri 2 Kebumen adalah sekolah yang terletak di Kota Kebumen, Provinsi Jawa Tengah. Website ini adalah website resmi SMA NEGERI 2 KEBUMEN">
+      <meta name="keywords" content="#,sman 2 kebumen,sma negeri 2 kebumen,smitc,smitc cms,sma,pelajar,kebumen,jawa tengah,indonesia">
+      <meta name="description" content="">
       <meta http-equiv="expires" content="Fri, 18 Jul 2022 1:00:00 GMT">
       <meta http-equiv="page-enter" content="revealtrans(duration=seconds,transition=num)">
       <meta http-equiv="page-exit" content="revealtrans(duration=seconds,transition=num)">
@@ -131,7 +144,7 @@ if(($data['id_artikel']) == 0) {
       <section class="image-top bg-image" data-image="upload/<?=$data['gambar']?>" style="background-image: url(&quot;upload/<?=$data['gambar']?>&quot;);">
          <div class="wrapper">
             <div class="container">
-               <h1><?= $judul?></h1>
+               <h1><?=$data['judul']?></h1>
                <ul class="data-article">
                   <li>
                      <a href="#" target="_blank">
@@ -171,12 +184,11 @@ if(($data['id_artikel']) == 0) {
             </ul>
          </div>
          <div class="bagikan">
-            <main idpost="1895">
-
-            
+            <main idpost="">
+           
                <article>
                  <p style="text-align:center"><img alt="" src="../upload/<?=$data['gambar']?>" style="height:300px; width:400px" /></p>
-                 <p style="text-align:justify"> <?= $data['artikel']?>  </p> 
+                 <p style="text-align:justify"> <?= $text?>  </p> 
 
               </article>
                <div class="tagwrap">
@@ -188,40 +200,44 @@ if(($data['id_artikel']) == 0) {
                      </a> -->
                   </div>
                </div>
+
+               <?php
+               $result = mysqli_query($conn, "SELECT * FROM tb_artikel");
+               ?>
                <div class="sharewrap">
                   <h2>Bagikan Postingan ini:</h2>
                   <div class="social-buttons center share">
-                     <button class="social-button facebook" data-sharer="facebook" data-title="Ayo cek postingan GASPALA Tanam 500 Bibit Nyamplung di Kawasan Konservasi Penyu Kaliratu di website SMA N 2 Kebumen link:" data-url="#lihat/gaspala-tanam-500-bibit-nyamplung-di-kawasan-konservasi-penyu-kaliratu-20230211.html" data-hashtag="smanda">
+                     <button class="social-button facebook" data-sharer="facebook" data-title="" data-url="https://www.sdn-3kerengbangkirai.my.id/detail/<?=$data['slug']?>">
                         <span class="sharecont">
                            <i class="fa fa-facebook"></i>
                            <span class="sharetext">Facebook</span>
                         </span>
                      </button>
-                     <button class="social-button linkedin" data-sharer="linkedin" data-url="#lihat/gaspala-tanam-500-bibit-nyamplung-di-kawasan-konservasi-penyu-kaliratu-20230211.html">
+                     <button class="social-button linkedin" data-sharer="linkedin" data-url="https://www.sdn-3kerengbangkirai.my.id/detail/<?=$data['slug']?>">
                         <span class="sharecont">
                            <i class="fa fa-linkedin"></i>
                            <span class="sharetext">Linkedin</span>
                         </span>
                      </button>
-                     <button class="social-button twitter" data-sharer="twitter" data-title="GASPALA Tanam 500 Bibit Nyamplung di Kawasan Konservasi Penyu Kaliratu di:" data-url="#lihat/gaspala-tanam-500-bibit-nyamplung-di-kawasan-konservasi-penyu-kaliratu-20230211.html" data-hashtags="smanda_kebumen,kebumen,jawa_tengah">
+                     <button class="social-button twitter" data-sharer="twitter" data-title="" data-url="https://www.sdn-3kerengbangkirai.my.id/detail/<?=$data['slug']?>" data-hashtags="">
                         <span class="sharecont">
                            <i class="fa fa-twitter"></i>
                            <span class="sharetext">Twitter</span>
                         </span>
                      </button>
-                     <button class="social-button telegram" data-sharer="telegram" data-title="Ayo cek postingan GASPALA Tanam 500 Bibit Nyamplung di Kawasan Konservasi Penyu Kaliratu di website SMA N 2 Kebumen link:" data-url="#lihat/gaspala-tanam-500-bibit-nyamplung-di-kawasan-konservasi-penyu-kaliratu-20230211.html" data-web="">
+                     <button class="social-button telegram" data-sharer="telegram" data-title="" data-url="https://www.sdn-3kerengbangkirai.my.id/detail/<?=$data['slug']?>" data-web="">
                         <span class="sharecont">
                            <i class="fa fa-telegram"></i>
                            <span class="sharetext">Telegram</span>
                         </span>
                      </button>
-                     <button class="social-button email" data-title="Awesome Url" data-subject="Ayo cek postingan GASPALA Tanam 500 Bibit Nyamplung di Kawasan Konservasi Penyu Kaliratu di website SMA N 2 Kebumen link:" data-url="#lihat/gaspala-tanam-500-bibit-nyamplung-di-kawasan-konservasi-penyu-kaliratu-20230211.html" data-to="emailtujuan@email.com">
+                     <button class="social-button email" data-title="Awesome Url" data-subject="https://www.sdn-3kerengbangkirai.my.id/detail/<?=$data['slug']?>" data-to="emailtujuan@email.com">
                         <span class="sharecont">
                            <i class="fa fa-envelope-o"></i>
                            <span class="sharetext">Email</span>
                         </span>
                      </button>
-                     <button class="social-button whatsapp" data-sharer="whatsapp" data-title="" data-url="/detail/<?=str_replace(" ","-",$data['judul'])?>" data-web="">
+                     <button class="social-button whatsapp" data-sharer="whatsapp" data-title="" data-url="https://www.sdn-3kerengbangkirai.my.id/detail/<?=$data['slug']?>" data-web="https://www.sdn-3kerengbangkirai.my.id/detail/<?=$url_slug?>">
                         <span class="sharecont">
                            <i class="fa fa-whatsapp"></i>
                            <span class="sharetext">WhatsApp</span>
@@ -269,13 +285,11 @@ if(($data['id_artikel']) == 0) {
                   <h2 id="rand_agen">Postingan Random</h2>
                   <div class="wrappost styletiga" id="random_id">
                   <?php 
-                  while ($data= mysqli_fetch_assoc($result)){ 
-                     $judul = $data['judul'];
-                     $url_slug = slugify($judul);?>
+                  while ($data= mysqli_fetch_assoc($result)){ ?>
                
                <div class="wraptiga">
                         <span class="number"><?=$no++?></span>
-                        <a href="../detail/<?=$url_slug?>" title="../detail/<?=$url_slug?>" class="waves-effect heading btn-anim"><?=$data['judul']?></a>
+                        <a href="../detail/<?=$data['slug']?>" title="../detail/<?=$data['slug']?>" class="waves-effect heading btn-anim"><?=$data['judul']?></a>
                      </div>
             <?php }
             ?>
@@ -293,16 +307,14 @@ if(($data['id_artikel']) == 0) {
                   <div class="wrappost" id="populer_id">
 
                   <?php 
-                  while ($data= mysqli_fetch_assoc($result)){ 
-                     $judul = $data['judul'];
-                     $url_slug = slugify($judul);?>
+                  while ($data= mysqli_fetch_assoc($result)){ ?>
                
                <div class="post">
-                        <a href="../detail/<?=$url_slug?>" class="image waves-effect">
+                        <a href="../detail/<?=$data['slug']?>" class="image waves-effect">
                            <img src="../upload/<?=$data['gambar']?>" data-src="../upload/<?=$data['gambar']?>" class="" alt="" title="">
                         </a>
                         <div class="box_desc">
-                           <a href="../detail/<?=$url_slug?>" class="title waves-effect" title="../detail/<?=$url_slug?>">
+                           <a href="../detail/<?=$data['slug']?>" class="title waves-effect" title="../detail/<?=$data['slug']?>">
                               <span>
                                  <h3><?=$data['judul']?></h3>
                               </span>

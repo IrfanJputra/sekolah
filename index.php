@@ -104,12 +104,13 @@
 </div> -->
 <?php include 'koneksi.php';
 include 'function.php';
-$result = mysqli_query($conn,"SELECT * FROM tb_artikel WHERE id_artikel= 21");
+
+$result = mysqli_query($conn,"SELECT * FROM tb_artikel WHERE id_artikel");
 $data = mysqli_fetch_array($result);
-$judul = $data['judul'];
-$url_slug = slugify($judul);
 $text_short = substr($data['artikel'], 0, 500) . "...";
+
 ?>
+        
         <div class="utamapost ">
           <a href="#" class="image waves-effect" title="">
             <img class="malas" src="upload/<?=$data['gambar']?>" data-src="" alt="" title="" />
@@ -117,7 +118,7 @@ $text_short = substr($data['artikel'], 0, 500) . "...";
           <div class="utamacontent">
             <h2><?=$data['judul']?></h2>
             <span class="desc"> <?=$text_short?> </span>
-            <a class="btn btn-anim btn-ln" href="detail/<?=$url_slug?>">Read more <i class="fa fa-chevron-right reverse"></i>
+            <a class="btn btn-anim btn-ln" href="detail/<?=$data['slug']?>">Read more <i class="fa fa-chevron-right reverse"></i>
             </a>
           </div>
         </div>
@@ -125,8 +126,6 @@ $text_short = substr($data['artikel'], 0, 500) . "...";
 <?php include 'koneksi.php';
 $result = mysqli_query($conn,"SELECT * FROM tb_artikel ORDER BY id_artikel DESC");
 $data = mysqli_fetch_array($result);
-$judul = $data['judul'];
-$url_slug = slugify($judul);
 $text_short = substr($data['artikel'], 0, 500) . "...";
 ?>
         <div class="utamapost">
@@ -136,12 +135,14 @@ $text_short = substr($data['artikel'], 0, 500) . "...";
           <div class="utamacontent">
             <h2><?=$data['judul']?></h2>
             <span class="desc"><?= $text_short?> </span>
-            <a class="btn btn-anim btn-ln" href="detail/<?=$url_slug?>">Read more <i class="fa fa-chevron-right reverse"></i>
+            <a class="btn btn-anim btn-ln" href="detail/<?=$data['slug']?>">Read more <i class="fa fa-chevron-right reverse"></i>
             </a>
           </div>
         </div>
       </div>
     </section>
+
+
     <?php
     include 'koneksi.php';
 
@@ -205,14 +206,12 @@ $text_short = substr($data['artikel'], 0, 500) . "...";
             ?>
             <?php 
             while ($data= mysqli_fetch_array($result)){  
-              $judul = $data['judul'];
-              $url_slug = slugify($judul);
             $date_str = date("d/m/Y", strtotime($data['tanggal'])); ?>
 
             
             <div class="wrapberita">
               <span class="number"><?= $date_str?></span>
-              <a href="detail/<?=$url_slug?>" class="waves-effect heading btn-anim has-ripple" title=""><?=$data['judul']?></a>
+              <a href="detail/<?=$data['slug']?>" class="waves-effect heading btn-anim has-ripple" title=""><?=$data['judul']?></a>
             </div>
           
 
@@ -242,17 +241,16 @@ $text_short = substr($data['artikel'], 0, 500) . "...";
             ?>
             <?php 
             while ($data= mysqli_fetch_array($result)){
-              $judul = $data['judul'];
-              $url_slug = slugify($judul); ?>
+               ?>
               <div class="grid">
               <a href="#" class="label waves-effect" title="#">
                 <i class="fa fa-user"></i> <?=$data['tagline']?> </a>
               <div class="image waves-effect">
                 <img class="" src="upload/<?=$data['gambar']?>" alt="<?=$data['judul']?>">
-                <a href="detail/<?=$url_slug?>" title="<?=$data['judul']?>"></a>
+                <a href="detail/<?=$data['slug']?>" title="<?=$data['judul']?>"></a>
               </div>
               <div class="box_desc">
-                <a href="detail/<?=$url_slug?>" class="title waves-effect" title="<?=$data['judul']?>">
+                <a href="detail/<?=$data['slug']?>" class="title waves-effect" title="<?=$data['judul']?>">
                   <span>
                     <h3><?=$data['judul']?></h3>
                   </span>

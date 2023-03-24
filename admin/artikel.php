@@ -70,8 +70,6 @@ include 'v_sidebar.php';
 
   // cek apakah tombol submit sudah ditekan atau belum
 if( isset($_POST["submit"]) ) {
-	
-	// cek apakah data berhasil di tambahkan atau tidak
 	if( tambah_artikel($_POST) > 0 ) {
 		echo "
 			<script>
@@ -110,7 +108,7 @@ if( isset($_POST["submit"]) ) {
                             </div>
                             <div class="mb-1">
                                 <label><strong>Artikel</strong></label>
-                                <textarea id="mytextarea" name='artikel' class="form-control"></textarea><br>
+                                <textarea id="" name='artikel' class="form-control"></textarea><br>
                             </div>
 
                             <div class="mb-3" >
@@ -136,7 +134,7 @@ if( isset($_POST["submit"]) ) {
                             <input type="file" class="custom-file-input" id="gambar" name="gambar">
                             <label class="custom-file-label" for="gambar">Pilih Gambar</label>
                             <input type="hidden" name="tanggal" value="<?php echo date("Y-m-d"); ?>">
-                            
+                            <input type="hidden" name="slug" id="slug" value="0" />
                             </div>
                             </div>
                             </div>
@@ -165,6 +163,7 @@ if( isset($_POST["submit"]) ) {
                     <th>Judul</th>
                     <th>Deskripsi</th>
                     <th>Tag</th>
+                    <th>Slug</th>
                     <th>Gambar</th>
                     <th>Aksi</th>
                   </tr>
@@ -184,6 +183,7 @@ if( isset($_POST["submit"]) ) {
                <td><?php echo $baris['judul']; ?></td>
                <td><?php echo $text_short ?></td>
                <td><?php echo $baris['tagline']; ?></td>
+               <td><?php echo $baris['slug']; ?></td>
                <td><a href="upload/<?php echo $baris['gambar']; ?>" target="_blank"><img src="../upload/<?php echo $baris['gambar']; ?>" width="50"> </a></td>
    
       
@@ -265,20 +265,5 @@ if( isset($_POST["submit"]) ) {
   });
 </script>
 
- <!-- Script -->
- <script>
-        tinymce.init({
-            forced_root_block : false,
-            selector: '#mytextarea',
-            plugins: [
-                'a11ychecker','advlist','advcode','advtable','autolink','checklist','export',
-                'lists','link','image','charmap','preview','anchor','searchreplace','visualblocks',
-                'powerpaste','fullscreen','formatpainter','insertdatetime','media','table','help','wordcount'
-            ],
-            toolbar: 'undo redo | formatpainter casechange styleselect | bold italic backcolor | ' +
-            'alignleft aligncenter alignright alignjustify | ' +
-            'bullist numlist checklist outdent indent | removeformat | a11ycheck code table help'
-        });
-    </script>
 </body>
 </html>
