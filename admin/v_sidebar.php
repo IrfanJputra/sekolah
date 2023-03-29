@@ -68,6 +68,14 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="pip.php" class="nav-link">
+              <i class="nav-icon fas fa-user-graduate"></i>
+              <p>
+                Data PIP
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="artikel.php" class="nav-link">
               <i class="nav-icon fas fa-book"></i>
               <p>

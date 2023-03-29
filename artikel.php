@@ -80,11 +80,11 @@
                   </div>
                   <ul>
                      <li>
-                        <a class="waves-effect " href="/sekolah">
+                        <a class="waves-effect " href="/">
                            <i class="fa fa-home mr-2"></i>Beranda </a>
                      </li>
                      <li>
-                        <a class="waves-effect " href="detail/Visi-Dan-Misi">
+                        <a class="waves-effect " href="detail/visi-dan-misi">
                            <i class="fa fa-star mr-2"></i>Visi dan Misi </a>
                      </li>
                      <li>

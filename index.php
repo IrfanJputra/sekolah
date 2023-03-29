@@ -2,6 +2,7 @@
 <html lang="en">
   <?php include 'header.php' ?>
   <body id="body">
+
     <section class="hero">
       <div class="navtop">
         <nav class="wrapper">
@@ -161,7 +162,7 @@ $text_short = substr($data['artikel'], 0, 500) . "...";
             <span class="title">Guru</span>
           </a>
           <?php
-          include 'koneksi.php';
+        
           $result = mysqli_query($conn, "SELECT COUNT(*) AS jumlah_data FROM tb_siswa");
           $data = mysqli_fetch_assoc($result);
           $jumlah = $data['jumlah_data'];
@@ -173,11 +174,17 @@ $text_short = substr($data['artikel'], 0, 500) . "...";
             <span class="title"><?=$jumlah?></span>
             <span class="title">Siswa</span>
           </a>
-          <a href="#" class="subicon btn-anim waves-effect">
+          <?php
+          
+          $result = mysqli_query($conn, "SELECT COUNT(*) AS jumlah_data FROM tb_pip");
+          $data = mysqli_fetch_assoc($result);
+          $jumlah = $data['jumlah_data'];
+          ?>
+          <a href="pip.php" class="subicon btn-anim waves-effect">
             <span class="icon">
               <i class="fa fa-credit-card"></i>
             </span>
-            <span class="title">49</span>
+            <span class="title"><?=$jumlah?></span>
             <span class="title">PIP</span>
           </a>
           <a href="#" class="subicon btn-anim waves-effect">

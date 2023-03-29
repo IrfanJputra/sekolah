@@ -180,6 +180,27 @@ function tambah_siswa($data){
 	return mysqli_affected_rows($conn);
 }
 
+// tambah pip
+function tambah_pip($data){
+
+	global $conn;
+	$nisn       			 = htmlspecialchars($data["nisn"]);
+	$nama              	= htmlspecialchars($data["nama"]);
+	$kelas              = htmlspecialchars($data["kelas"]);
+	$nama_ortu                = htmlspecialchars($data["nama_ortu"]);
+	$tahap                = htmlspecialchars($data["tahap"]);
+	$nominal                = htmlspecialchars($data["nominal"]);
+	$status                = htmlspecialchars($data["status"]);
+	
+	$query = "INSERT INTO tb_pip 
+					VALUES ('$nisn', '$nama', '$kelas', '$nama_ortu', '$tahap','$nominal','$status')";
+   
+   
+   mysqli_query($conn, $query);
+
+	return mysqli_affected_rows($conn);
+}
+
 //tambah artikel
 function tambah_artikel($data){
 
@@ -274,6 +295,34 @@ function tambah_ktg($data){
 					tempat_lahir = '$tempat_lahir',
 					tanggal_lahir = '$tanggal_lahir',
 					alamat = '$alamat'
+				";
+	
+		mysqli_query($conn, $query);
+	
+		return mysqli_affected_rows($conn);	
+	}
+
+	//ubah pip
+	function ubah_pip($data) {
+		global $conn;
+		$id 					= $_GET['nisn'];
+		$nisn       			 = htmlspecialchars($data["nisn"]);
+		$nama              	= htmlspecialchars($data["nama"]);
+		$kelas              = htmlspecialchars($data["kelas"]);
+		$nama_ortu                = htmlspecialchars($data["nama_ortu"]);
+		$tahap                = htmlspecialchars($data["tahap"]);
+		$nominal                = htmlspecialchars($data["nominal"]);
+		$status                = htmlspecialchars($data["status"]);
+	
+		$query = "UPDATE tb_pip SET
+					nisn = '$nisn',
+					nama = '$nama',
+					kelas = '$kelas',
+					nama_ortu = '$nama_ortu',
+					tahap = '$tahap',
+					nominal = '$nominal',
+					status = '$status'
+					WHERE nisn = $id
 				";
 	
 		mysqli_query($conn, $query);
@@ -388,6 +437,20 @@ function tambah_ktg($data){
 						mysqli_query($conn, "DELETE FROM tb_login WHERE id_login = $id");
 						return mysqli_affected_rows($conn);
 					}
+
+						//hapus pip
+						function hapus_pip($id) {
+							global $conn;
+							mysqli_query($conn, "DELETE FROM tb_pip WHERE nisn = $id");
+							return mysqli_affected_rows($conn);
+						}
+						//hapus allpip
+						function hapus_allpip($id) {
+							global $conn;
+							mysqli_query($conn, "DELETE FROM tb_pip");
+							return mysqli_affected_rows($conn);
+						}
+	
 
 					
 					// //slug text
