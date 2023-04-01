@@ -340,6 +340,7 @@ $text_short = substr($data['artikel'], 0, 500) . "...";
         </div>
       </div>
     </section>
+
     <section class="contact">
       <div class="wrapper">
         <div class="wrapcontact">
@@ -348,35 +349,61 @@ $text_short = substr($data['artikel'], 0, 500) . "...";
               <div class="heading">
                 <h1>Contact</h1>
               </div>
-              <form id='kritiksaran' action="" enctype="multipart/form-data" method="post" accept-charset="utf-8">
+              <?php
+
+              // cek apakah tombol submit sudah ditekan atau belum
+              if( isset($_POST["submit"]) ) {
+
+              // cek apakah data berhasil di tambahkan atau tidak
+              if( tambah_inb($_POST) > 0 ) {
+                echo "
+                  <script>
+                    alert('Pesan berhasil dikirim!');
+                    document.location.href = '/sekolah';
+                  </script>
+                ";
+              } else {
+                echo "
+                <script>
+                  alert('Pesan gagal dikirim!');
+                  document.location.href = '/sekolah';
+                </script>
+              ";
+              }
+
+
+              }
+              ?>
+              <form  action="" enctype="multipart/form-data" method="post" accept-charset="utf-8">
                 <div class="formtwo">
                   <div class="input-field">
-                    <input class="validate" id="name_form" name="" required="" type="text">
+                    <input class="validate"  name="nama" required="" type="text">
                     <span class="highlight"></span>
                     <span class="bar"></span>
                     <label for="name_form">Name</label>
                   </div>
                   <div class="input-field">
-                    <input class="validate" id="email_form" name="" required="" type="email">
+                    <input class="validate" name="email" required="" type="email">
                     <span class="highlight"></span>
                     <span class="bar"></span>
-                    <label for="email_form">E-mail</label>
+                    <label for="email">E-mail</label>
                   </div>
                 </div>
                 <div class="input-field">
-                  <textarea class="validate" name="pesan_kritiksaran" id="pesan_form" cols="10" rows="10" required="" type="text"></textarea>
+                  <textarea class="validate" name="pesan"  cols="10" rows="10" required="" type="text"></textarea>
                   <span class="highlight"></span>
                   <span class="bar"></span>
-                  <label for="pesan_form">Pesan</label>
+                  <label for="pesan">Pesan</label>
                 </div>
                 <span class="pesan">*NB tidak perlu login untuk Komentar</span>
                 <div class="btn-group">
-                  <button class="btn btn-ln btn-anim" type="submit" id="submit">Kirim</button>
+                  <button class="btn btn-ln btn-anim" type="submit" name="submit">Kirim</button>
                   <svg class="spinner" width="30px" height="30px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
                     <circle class="circle" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
                   </svg>
                 </div>
               </form>
+
             </div>
             <div class="content">
               <div class="heading alamat">
@@ -398,6 +425,7 @@ $text_short = substr($data['artikel'], 0, 500) . "...";
         </div>
       </div>
     </section>
+    
     <div id="search_popup" class="modal">
       <h2>Cari Sesuatu...</h2>
       <form class="search" action="#">
@@ -447,7 +475,10 @@ $text_short = substr($data['artikel'], 0, 500) . "...";
         </a>
       </div>
     </div>
+
     <script type="text/javascript" src="user/assets/js/pages/landing.min.js"></script>
     <script type="text/javascript" src="user/assets/js/swiper.min.js"></script>
     <script type="text/javascript" src="user/assets/js/pages/core-landing.min.js"></script>
+
+
 </html>

@@ -242,6 +242,21 @@ function tambah_ktg($data){
 	return mysqli_affected_rows($conn);
 }
 
+//tambah inbox
+function tambah_inb($data){
+
+	global $conn;
+	$nama             	= htmlspecialchars($data["nama"]);
+	$email             	= htmlspecialchars($data["email"]);
+	$pesan             	= htmlspecialchars($data["pesan"]);
+
+	$query = "INSERT INTO tb_inbox
+					VALUES (NULL,'$nama','$email','$pesan')";
+   mysqli_query($conn, $query);
+
+	return mysqli_affected_rows($conn);
+}
+
 
 //ubah guru
 	function ubah($data) {
@@ -450,7 +465,12 @@ function tambah_ktg($data){
 							mysqli_query($conn, "DELETE FROM tb_pip");
 							return mysqli_affected_rows($conn);
 						}
-	
+							//hapus inbox
+							function hapus_inb($id) {
+								global $conn;
+								mysqli_query($conn, "DELETE FROM tb_inbox WHERE id_inbox='$id'");
+								return mysqli_affected_rows($conn);
+							}
 
 					
 					// //slug text
